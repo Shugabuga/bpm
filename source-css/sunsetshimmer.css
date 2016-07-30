@@ -173,7 +173,7 @@ div#header-bottom-left ul.tabmenu {
 
 .sidecontentbox .helplink+.title h1 { font-size: 0 !important }
 .sidecontentbox .helplink+.title h1:before { font-size: 10pt !important; content: "Delinquents" }
-.sidecontentbox .helplink+.title+.content li:nth-of-type(6n) { display: none }
+.sidecontentbox .helplink+.title+.content li:nth-of-type(6) { display: none }
 
 .side {
   padding: 0 10px;
@@ -747,6 +747,9 @@ a[href|="/applederp"],a[href|="/rapplederp"],a[href|="/ppseesyou"],a[href|="/rpp
 .flair-harshwhinny
 {background-position:-300% -2800%}
 
+.flair-zephyrbreeze
+{background-position:-300% -2900%}
+
 .flair-100-emblem,.flair-100-sunset,.flair-200-emblem,.flair-200-sunset
 {height:42px;width:32px;background-image:url(%%oddballs%%)!important}
 
@@ -1232,8 +1235,8 @@ a[href|="/mirrorportal"] {
   float: left;
   width: 59px;
   height: 112px;
-  background-image: url(%%oddballs%%) !important;
-  background-position: -1243px -150px;
+  cursor: default;
+  background-image: url(%%portal%%) !important;
 }
 
 a[href|="/sunsetrock"],a[href|="/ssrock"] {
@@ -1262,30 +1265,6 @@ START-PONYSCRIPT-IGNORE { color: red; }
 .side a[href|="/ssexcited"] {margin-bottom: -13px;}
 
 .side a[href|="/sssenpai"] {margin-bottom: -13px;}
-
-a[href|="/sunsetapplauds"],a[href|="/rsunsetapplauds"],a[href|="/ssapplauds"],a[href|="/rssapplauds"] {
-  -webkit-animation: applause 320ms steps(4) infinite;
-  -moz-animation: applause 320ms steps(4) infinite;
-  -o-animation: applause 320ms steps(4) infinite;
-  animation: applause 320ms steps(4) infinite;
-}
-
-@-webkit-keyframes applause {
-  from { background-position: -96px; }
-  to { background-position: -480px; }
-}
-@-moz-keyframes applause {
-  from { background-position: -96px; }
-  to { background-position: -480px; }
-}
-@-o-keyframes applause {
-  from { background-position: -96px; }
-  to { background-position: -480px; }
-}
-@keyframes applause {
-  from { background-position: -96px; }
-  to { background-position: -480px; }
-}
 
 a[href|="/sunsetlaugh"],a[href|="/sslaugh"],a[href|="/rsunsetlaugh"],a[href|="/rsslaugh"] {
   display: block;
@@ -1372,33 +1351,6 @@ a[href|="/standingsunset"],a[href|="/standingss"] {
 @keyframes standingss {
   from {background-position: -66px}
     to {background-position: -14124px}
-}
-
-a[href|="/sunsetclop"],a[href|="/ssclop"],a[href|="/clappingsunset"],a[href|="/rclappingsunset"],a[href|="/clappingss"],a[href|="/rclappingss"] {
-  -webkit-animation: ssclap 276ms steps(3) infinite;
-  -moz-animation: ssclap 276ms steps(3) infinite;
-  -o-animation: ssclap 276ms steps(3) infinite;
-  animation: ssclap 276ms steps(3) infinite;
-}
-
-@-webkit-keyframes ssclap {
-  from {background-position: -70px}
-  to {background-position: -280px}
-}
-
-@-moz-keyframes ssclap {
-  from {background-position: -70px}
-  to {background-position: -280px}
-}
-
-@-o-keyframes ssclap {
-  from {background-position: -70px}
-  to {background-position: -280px}
-}
-
-@keyframes ssclap {
-  from{background-position: -70px}
-    to{background-position: -280px}
 }
 
 a[href|="/sunsetgroovin"],a[href|="/ssgroovin"] {
@@ -1871,3 +1823,7 @@ a.thumbnail.self{margin-right:-14px}
   color: white !important;
   content: "NSFW emote!";
 }
+
+.stylesheet-customize-container textarea { height: 600px }
+
+.side sup:nth-of-type(1) { padding-left: 40px }
