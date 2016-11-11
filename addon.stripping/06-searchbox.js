@@ -18,6 +18,8 @@ var sb_tabframe = null;
 var sb_results = null;
 var sb_helptab = null;
 var sb_helplink = null;
+var sb_flagtab = null;
+var sb_flaglink = null;
 var sb_optionslink = null;
 var sb_resize = null;
 var sb_global_icon = null; // Global << thing
@@ -83,9 +85,83 @@ function inject_search_box() {
               '<p class="bpm-sb-help">Some emotes are hidden by default. ',
                 'Use <code>"+nonpony"</code> to see them.</p>',
             '</div>',
+            '<div id="bpm-sb-flagtab">',
+              '<p class="bpm-sb-flag">You can add various flags onto emotes to ',
+              'change their appearance or behavior using the syntax of <code>',
+              '[](/emote-flag)</code>. Also, multiple flags can be added per emote.</p>',
+              '<p class="bpm-sb-flag">For instance, <code class="bpm-sb-noconvert-flutterwink">',
+              '</code> generates <a class="bpm-emote bpflag-invert bpflag-in ',
+              'bpmote-flutterwink"></a>.</p>',
+              '<p class="bpm-sb-flag">If you need to type an emote in the middle of the sentence, like -> <a class="bpm-emote bpflag-in bpmote-pinkieooh"></a> <- this, use the <code>-in</code> flag.</p>',
+              '<p class="bpm-sb-flag">If you need to have an emote towards the right side of your comment, use the flag <code>-ar</code>.<a class="bpm-emote bpflag-ar bpflag-in bpmote-smooze"></a></p>',
+              '<p class="bpm-sb-flag">Most of the other flags that can be used are listed',
+              ' below:</p><br><br><br><br>',
+              '<center>Basics:</center>',
+               '<center><table class="bpflagtable">',
+                 '<tr>',
+                   '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-r bpmote-twibeam"></a><br><center><code>-r</code></center></th>',
+                   '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-d bpmote-twibeam"></a><br><center><code>-d</code></center></th>',
+                   '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-f bpmote-twibeam"></a><br><center><code>-f</code></center></th>',
+                   '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-45 bpmote-twibeam"></a><br><center><code>-45</code></center></th>',
+                   '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-m bpmote-twibeam"></a><br><center><code>-m</code></center></th>',
+                 '</tr>',
+               '</table></center><br>',
+               '<center>Colouring:</center>',
+                '<center><table class="bpflagtable">',
+                  '<tr>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-i bpmote-derpyshock"></a><br><center><code>-i</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-invert bpmote-derpyshock"></a><br><center><code>-invert</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-mono bpmote-derpyshock"></a><br><center><code>-mono</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-sepia bpmote-derpyshock"></a><br><center><code>-sepia</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-blur bpmote-derpyshock"></a><br><center><code>-blur</code></center></th>',
+                  '</tr>',
+                '</table></center><br>',
+                '<center>Animated:</center>',
+                 '<center><table class="bpflagtable">',
+                   '<tr>',
+                     '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-spin bpmote-happyluna"></a><br><center><code>-spin</code></center></th>',
+                     '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-_excl_spin bpmote-happyluna"></a><br><center><code>-!spin</code></center></th>',
+                     '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-xspin bpmote-happyluna"></a><br><center><code>-xspin</code></center></th>',
+                     '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-yspin bpmote-happyluna"></a><br><center><code>-yspin</code></center></th>',
+                  '</tr>',
+                  '<tr>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-zspin bpmote-happyluna"></a><br><center><code>-zspin</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-_excl_zspin bpmote-happyluna"></a><br><center><code>-!zspin</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-wobble bpmote-happyluna"></a><br><center><code>-wobble</code></center></th>',
+                    '<th class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-intensifies bpmote-happyluna"></a><br><center><code>-intensifies</code></center></th>',
+                 '</tr>',
+                 '</table></center><br>',
+                 '<center>Sliding:</center>',
+                  '<center><table class="bpflagtable">',
+                      '<tr><th style="table-layout:fixed;width:350px;" class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-slide bpmote-rdwut"></a><br><center><code>-slide</code></center></th></tr>',
+                      '<tr><th style="table-layout:fixed;width:350px;" class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-_excl_slide bpmote-rdwut"></a><br><center><code>-!slide</code></center></th></tr>',
+                      '<tr><th style="table-layout:fixed;width:350px;" class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-shift bpmote-rdwut"></a><br><center><code>-shift</code></center></th></tr>',
+                      '<tr><th style="table-layout:fixed;width:350px;" class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-_excl_shift bpmote-rdwut"></a><br><center><code>-!shift</code></center></th></tr>',
+                  '</table></center><br>',
+                  '<center>Text (use with <code class="bpm-sb-noconvert-txt"></code>):</center>',
+                   '<center><table class="bpflagtable">',
+                     '<tr>',
+                       '<th class="bpflagtable-031e"><center><a style="color:black" class="bpm-emote bpmote-txt_excl bpflag-blink_excl_">yay.</a></center><br><center><code>-blink!</code></center></th>',
+                       '<th class="bpflagtable-031e"><center><a style="color:black" class="bpm-emote bpmote-txt_excl bpflag-comicsans_excl_">yay.</a></center><br><center><code>-comicsans!</code></center></th>',
+                       '<th class="bpflagtable-031e"><center><a style="color:black" class="bpm-emote bpmote-txt_excl bpflag-impact_excl_">yay.</a></center><br><center><code>-impact!</code></center></th>',
+                       '<th class="bpflagtable-031e"><center><a style="color:black" class="bpm-emote bpmote-txt_excl bpflag-tahoma_excl_">yay.</a></center><br><center><code>-tahoma!</code></center></th>',
+                       '<th class="bpflagtable-031e"><center><a style="color:black" class="bpm-emote bpmote-txt_excl bpflag-papyrus_excl_">yay.</a></center><br><center><code>-papyrus!</code></center></th>',
+                       '<th class="bpflagtable-031e"><center><a style="color:black" class="bpm-emote bpmote-txt_excl bpflag-center">yay.</a></center><br><center><code>-center</code></center></th>',
+                       '</tr>',
+                   '</table></center><br>',
+                   '<br><a class="bpm-emote bpflag-spin bpflag-s1 bpmote-zecora"></a><p class="bpm-sb-flag">Intensity and speed modifiers allow you to modify how flags work and appear. For example, <code class="bpm-sb-noconvert-zecora"></code> would make the emote spin very fast (see left).<br>The examples below demonstrate the least and most intense of the modification flags.</p>',
+                   '<br><br><center>Intensity/Speed Modifiers:</center>',
+                    '<center><table class="bpflagtable">',
+                        '<tr><th style="table-layout:fixed;width:350px;" class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-s1 bpflag-slide bpmote-gummystare"></a><br><center><code>-s1 and -slide</code></center></th></tr>',
+                        '<tr><th style="table-layout:fixed;width:350px;" class="bpflagtable-031e"><a class="bpm-emote bpflag-in bpflag-s15 bpflag-_excl_slide bpmote-gummystare"></a><br><center><code>-s15 and -slide</code></center></th></tr>',
+                        '</table><table class="bpflagtable"><tr><th style="table-layout:fixed;width:170px;" class="bpflagtable-031e"><center><a class="bpm-emote bpflag-in bpflag-blur1 bpmote-gummystare"></a></center><br><center><code>-blur1</code></center></th>',
+                        '<th style="table-layout:fixed;width:170px;" class="bpflagtable-031e"><center><a class="bpm-emote bpflag-in bpflag-blur8 bpmote-gummystare"></a></center><br><center><code>-blur8</code></center></th></tr>',
+                    '</table></center><br>',
+            '</div>',
           '</div>',
           '<div id="bpm-sb-bottomrow">',
-            '<a id="bpm-sb-helplink" href="javascript:void(0)">help</a> | ',
+            '<a id="bpm-sb-helplink" href="javascript:void(0)">search help</a> | ',
+            '<a id="bpm-sb-flaglink" href="javascript:void(0)">flags help</a> | ',
             '<a id="bpm-sb-optionslink" href="javascript:void(0)">bpm options</a>',
             '<span id="bpm-sb-resize"></span>',
             '<a id="bpm-sb-srlink" href="https://www.reddit.com/r/betterponymotes">/r/betterponymotes</a>',
@@ -107,6 +183,8 @@ function inject_search_box() {
     sb_results = document.getElementById("bpm-sb-results");
     sb_helptab = document.getElementById("bpm-sb-helptab");
     sb_helplink = document.getElementById("bpm-sb-helplink");
+    sb_flagtab = document.getElementById("bpm-sb-flagtab");
+    sb_flaglink = document.getElementById("bpm-sb-flaglink");
     sb_optionslink = document.getElementById("bpm-sb-optionslink");
     sb_resize = document.getElementById("bpm-sb-resize");
 
@@ -189,6 +267,15 @@ function init_search_ui(store) {
         }
     }), false);
 
+    // Listen for the "flag" tab link
+    sb_flaglink.addEventListener("click", catch_errors(function(event) {
+        if(current_sb_tab !== sb_flagtab) {
+            switch_to_sb_tab(sb_flagtab);
+        } else {
+            switch_to_sb_tab(sb_results);
+        }
+    }), false);
+
     // Set up the options page link
     linkify_options(sb_optionslink);
 
@@ -217,11 +304,18 @@ function init_search_ui(store) {
         store.sync_key("searchBoxInfo");
     });
 
+    // Keep the searchbox on the window
+    keep_on_window(sb_container);
+
+    window.addEventListener("resize", catch_errors(function(event) {
+        keep_on_window(sb_container);
+    }), false);
+
     // Enable dragging the resize element around (i.e. resizing it)
     var search_box_width, search_box_height;
     enable_drag(sb_resize, function(event) {
-        search_box_width = parseInt(sb_container.style.width, 10);
-        search_box_height = parseInt(sb_container.style.height, 10);
+        search_box_width = parseInt(sb_container.style.width ? sb_container.style.width : 620, 10);
+        search_box_height = parseInt(sb_container.style.height ? sb_container.style.height : 450, 10);
     }, function(event, dx, dy) {
         // 420px wide prevents the search box from collapsing too much, and
         // the extra 5px is to prevent the results div from vanishing (which
@@ -259,6 +353,15 @@ function init_search_ui(store) {
     if (is_voat) {
         sb_input.classList.add("form-control");
         if (document.body.classList.contains("dark")) {
+            sb_container.classList.add("bpm-dark");
+            sb_tabframe.classList.add("bpm-dark");
+        }
+    }
+
+    // If used on Reddit, and RES enables nightmode, change the theme
+    // of BPM accordingly, similarly to how it is with Voat.
+    if (is_reddit) {
+        if (document.body.classList.contains("res-nightmode")) {
             sb_container.classList.add("bpm-dark");
             sb_tabframe.classList.add("bpm-dark");
         }
@@ -341,6 +444,7 @@ function show_search_box(store) {
 
 function hide_search_box() {
     sb_container.style.visibility = "hidden";
+    sb_flagtab.style.display = "none"; //Needed to make the "flags help" tab a) not lag when unused and b) display properly.
     // TODO: possibly clear out the search results, since it's a large pile
     // of HTML.
     if(target_form) {
@@ -349,7 +453,7 @@ function hide_search_box() {
 }
 
 function switch_to_sb_tab(tab) {
-    var tabs = [sb_results, sb_helptab];
+    var tabs = [sb_results, sb_helptab, sb_flagtab];
     for(var i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none";
     }
@@ -436,7 +540,7 @@ function display_search_results(store, results) {
 
         // Use <span> so there's no chance of emote parse code finding
         // this.
-        html += "<span data-emote=\"" + result.name + "\" class=\"bpm-search-result " +
+        html += "<span data-emote=\"" + result.name + "\" class=\"bpm-search-result bpm-emote " +
                 result.css_class + "\" title=\"" + result.name + " from " + result.source_name + "\">";
         if(result.tags.indexOf(store.formatting_tag_id) > -1) {
             html += "Example Text";

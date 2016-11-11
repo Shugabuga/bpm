@@ -138,7 +138,7 @@ case "firefox-ext":
         // backend for the prefix (not wanting to do that is the reason for
         // hardcoding it). Ideally self.data.url() would be accessible to
         // content scripts, but it's not...
-        return "resource://jid1-thrhdjxskvsicw-at-jetpack/betterponymotes/data" + filename;
+        return "resource://jid1-thrhdjxskvsicw-at-jetpack/data" + filename;
     };
 
     make_css_link = function(filename, callback) {
@@ -182,6 +182,11 @@ case "chrome-ext":
     };
 
     var _message_handler = catch_errors(function(message) {
+        if(!message || !message.method) {
+            log_error("Unknown request from Chrome background script: '" + message + "'");
+            return;
+        }
+
         switch(message.method) {
         case "initdata":
             _complete_setup(message);
@@ -225,10 +230,13 @@ case "safari-ext":
                 _complete_setup(message.message);
                 break;
 
+<<<<<<< HEAD:addon.stripping/02-browser.js
             case "emotes":
                 _refresh_cache(message.message);
                 break;
 
+=======
+>>>>>>> Rothera/master:addon/bpm-browser.js
             default:
                 log_error("Unknown request from Safari background script: '" + message.message.method + "'");
                 break;

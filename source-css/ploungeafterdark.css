@@ -674,7 +674,7 @@ display: none !important;
 .flair {
 border: 0px !important;
 padding:0px;
-background: url(%%spritesheetnew%%) no-repeat -9999px -9999px;
+background: url(%%spritesheet1-04%%) no-repeat -9999px -9999px;
 }
 
 
@@ -720,6 +720,7 @@ background: url(%%spritesheetnew%%) no-repeat -9999px -9999px;
 .flair-zecoraflair{ background-position: -80px -1040px; width: 30px; height: 30px; }
 .flair-leftyflair{ background-position: -80px -1118px; width: 30px; height: 30px; }
 .flair-thunderflair{ background-position: -80px -1201px; width: 30px; height: 30px; }
+.flair-starlightflair{ background-position: -80px -1280px; width: 30px; height: 30px; }
 
 a[href="/jclop"] {
 background-position: 0px 0px;
@@ -1127,18 +1128,6 @@ a.author[href$=shellbullet17]:before {
     font-size: 11px;
 }
 
-a.author[href$="Synes7hesia"] {
-font-size:0!important; 
-     overflow:hidden; 
-     display:inline-block; 
-     content: "";
-}
-a.author[href$="Synes7hesia"]:before {
-     font-size:11px!important; 
-     visibility:visible!important; 
-     content: "Synistar"
-}
-
 a.author[href$="GoldenNeko"] {
 font-size:0!important; 
      overflow:hidden; 
@@ -1188,13 +1177,7 @@ a.author[href$="Morichalion"]:before {
      visibility:visible!important; 
      content: "fuckhat "
 }
-*/
-    
-a.author[href$="ponytron5000"]:after{content:" - Created the Header!"}
-a.author[href$="NtmrMoon"]:after{color: #D6B52F; content:" - Costume Contest Winner Halloween 2014"}
-a.author[href$="willowmvp227"]:after{color: #D6B52F; content:" - Costume Contest Winner Halloween 2014"}
-a.author[href$="SeatieBelt"]:after{content:" + __brony__ best ship"}
-a.author[href$="__brony__"]:after{content:" + SeatieBelt best ship"}
+
 
 /*greentext*/
 .md blockquote {
@@ -1222,6 +1205,14 @@ a[href$="/spoiler"], a[href$="#spoiler"], a[href$="/s"], a[href$="#s"] {
 }  
 a[href$="/spoiler"]:hover, a[href$="#spoiler"]:hover, a[href$="/s"]:hover, a[href$="#s"]:hover {  
     color: #FFF !important  
+}  
+
+a[href$="/nsfw"], a[href$="#nsfw"], a[href$="/n"], a[href$="#n"] {  
+    background: #A22 !important;  
+    color: #A22 !important  
+}  
+a[href$="/nsfw"]:hover, a[href$="#nsfw"]:hover, a[href$="/n"]:hover, a[href$="#n"]:hover {  
+    color: #000 !important  
 }  
 
 /*byebyedownvotes*/

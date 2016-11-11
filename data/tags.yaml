@@ -41,10 +41,10 @@ HiddenTags:
 - +drop
 
 TagAliases:
-  +applejack: [+aj]
+  +applejack: [+aj, +applepone, +applehorse]
   +fluttershy: [+fs]
-  +pinkiepie: [+pp]
-  +rainbowdash: [+rbd, +rd]
+  +pinkiepie: [+pp, +ponk]
+  +rainbowdash: [+rbd, +rd, +dashie]
   +twilightsparkle: [+ts]
 
   +applebloom: [+ab]
@@ -78,12 +78,12 @@ TagImplications:
   +broken: [+remove]
 
   # Mane 6
-  +applejack: [+canon, +mane, +pony]
-  +fluttershy: [+canon, +mane, +pony]
-  +pinkiepie: [+canon, +mane, +pony]
+  +applejack: [+canon, +main, +mane, +pony]
+  +fluttershy: [+canon, +main, +mane, +pony]
+  +pinkiepie: [+canon, +main, +mane, +pony]
   +rarity: [+canon, +mane, +pony]
-  +rainbowdash: [+canon, +mane, +pony]
-  +twilightsparkle: [+canon, +mane, +pony]
+  +rainbowdash: [+canon, +main, +mane, +pony]
+  +twilightsparkle: [+canon, +main, +mane, +pony]
 
   # CMC
   +applebloom: [+canon, +cmc, +major, +pony]
@@ -100,6 +100,7 @@ TagImplications:
   +princesscadance: [+canon, +major, +pony]
   +caketwins: [+canon, +major, +pony]
   +cheerilee: [+canon, +major, +pony]
+  +coloratura: [+canon, +major, +pony]
   +queenchrysalis: [+canon, +major, +pony, +villain]
   +cheesesandwich: [+canon, +major, +pony]
   +cockatrice: [+canon, +major]
@@ -108,10 +109,13 @@ TagImplications:
   +derpy: [+canon, +major, +pony]
   +diamondtiara: [+canon, +major, +pony]
   +discord: [+canon, +major, +villain]
+  +ember: [+canon, +major]
   +fancypants: [+canon, +major, +pony]
   +flashsentry: [+canon, +major, +pony]
   +fleurdelis: [+canon, +major, +pony]
   +flimandflam: [+canon, +major, +pony]
+  +flurryheart: [+canon, +major, +pony]
+  +gabby: [+canon, +major]
   +gilda: [+canon, +major]
   +starlightglimmer: [+canon, +major, +pony]
   +grannysmith: [+canon, +major, +pony]
@@ -147,6 +151,7 @@ TagImplications:
   +trixie: [+canon, +major, +pony]
   +troubleshoes: [+canon, +major, +pony]
   +twist: [+canon, +major, +pony]
+  +sunburst: [+canon, +major, +pony]
   +vinylscratch: [+canon, +major, +pony]
   +winona: [+canon, +major]
   +zecora: [+canon, +major, +pony]

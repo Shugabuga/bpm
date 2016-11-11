@@ -43,8 +43,13 @@ try {
     console.error(e.trace);
 }
 
+<<<<<<< HEAD:addon.stripping/firefox/main.js
 var manage_prefs = require("pref-setup").manage_prefs;
 var bpm_data = require("bpm-resources").bpm_data;
+=======
+var manage_prefs = require("./pref-setup").manage_prefs;
+var bpm_data = require("./bpm-resources");
+>>>>>>> Rothera/master:addon/fx-main.js
 
 var storage = simple_storage.storage;
 

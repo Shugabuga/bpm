@@ -4,7 +4,7 @@
     font-family:Consolas, Segoe UI;
     font-weight:bold;
 }*/
-
+/*
 .flairselector .customizer {
     display: none !important;
 }
@@ -13,7 +13,6 @@
 div.titlebox span.word {
     display:none
 }
-
 div.titlebox .subscribers span.number:after {
     content:" Spikes"
 }
@@ -37,13 +36,13 @@ div.titlebox .users-online span.number:after {
 #header-img {
     margin-top:-27px;
 }
-
+*/
 /*#header-img {
     margin:5px 3px -3px 0px;
     padding:0px 5px
 }
 */
-
+/*
 #header-bottom-left {
     background: #DBF8CE;
 }
@@ -66,7 +65,7 @@ div.titlebox .users-online span.number:after {
 
 .formtabs-content {
     border-top: 4px solid rgb(165, 207, 95);
-}
+}*/
 /*Name substitute*/
 
 
@@ -138,7 +137,7 @@ a[href="/sbload"],a[href="/sbthrobber"],a[href="/sbbusy"] {
     Float: left;
     Width: 71px;
     Height: 81px;
-    background-image: url(%%sbload2%%) !important
+    background-image: url(%%sbload%%) !important
 }
 
 a[href="/rdwut"] {
@@ -171,7 +170,7 @@ a[href="/sbtarget"],a[href="/sweetiebottarget"],a[href="/sbmissile"] {
     background-image: url(%%sbtarget%%) !important
 }
 
-a[href="/sbsquint"]{
+a[href="/sbsquint"],a[href="/sweetiesquint"] {
     background-position: 0px 0px;
     Display: block;
     Clear: none;
@@ -228,7 +227,7 @@ a[href|="/sp"] {
     height:0px
 }
 
-a[href="/sbisonfire"], a[href="/roastedmarshmallow"], a[href="/grenlitbobonfireagain"], a[href="/sweetieisonfire"], a[href="/sweetiebelleisonfire"], a[href="/bobdudeisonfire"], a[href="/bobdude0isonfire"], a[href="/sweetieonfire"]  {
+a[href="/sbisonfire"], a[href="/roastedmarshmallow"], a[href="/grenlitbobonfireagain"], a[href="/sweetieisonfire"], a[href="/sweetiebelleisonfire"], a[href="/bobdudeisonfire"], a[href="/bobdude0isonfire"], a[href="/sweetieonfire"], a[href="/sbfire"], a[href="/sbonfire"]  {
     background-position: 0px 0px;
     Display: block;
     Clear: none;
@@ -238,7 +237,87 @@ a[href="/sbisonfire"], a[href="/roastedmarshmallow"], a[href="/grenlitbobonfirea
     background-image: url(%%roastedmarshmallow%%) !important
 }
 
-/*Making the tabs' corners more rounded (stolen from r/mylittlepony)*/
+a[href="/rdgrunkle"],a[href="/joaje"]{
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 70px;
+    Height: 70px;
+    background-image: url(%%rdgrunkle%%) !important
+}
+
+a[href="/ashpie"], a[href="/pinkieketchum"]{
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 70px;
+    Height: 70px;
+    background-image: url(%%ashpie%%) !important
+}
+
+a[href="/flashyoak"], a[href="/garysentry"]{
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 70px;
+    Height: 70px;
+    background-image: url(%%flashyoak%%) !important
+}
+
+a[href="/proftwi"]{
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 70px;
+    Height: 70px;
+    background-image: url(%%proftwi%%) !important
+}
+
+a[href="/turnupfam"], a[href="/flutterfam"], a[href="/famshy"] {
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 200px;
+    Height: 141px;
+    background-image: url(%%turnupfam%%) !important
+}
+
+a[href="/soarinnom"], a[href="/soarnom"], a[href="/pienom"] {
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 148px;
+    Height: 160px;
+    background-image: url(%%soarinnom%%) !important
+}
+
+a[href="/sbtrill"], a[href="/sbfam"], a[href="/sbchill"], a[href="/sbhip"] {
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 175px;
+    Height: 175px;
+    background-image: url(%%sbtrill%%) !important
+}
+
+a[href="/cloudsmash"], a[href="/justcloudhopthings"] {
+    background-position: 0px 0px;
+    Display: block;
+    Clear: none;
+    Float: left;
+    Width: 200px;
+    Height: 176px;
+    background-image: url(%%cloudsmash%%) !important
+}
+
+/*Making the tabs' corners more rounded (stolen from r/mylittlepony)*//*
 .tabmenu li a {
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -248,7 +327,7 @@ a[href="/sbisonfire"], a[href="/roastedmarshmallow"], a[href="/grenlitbobonfirea
     border-top-right-radius: 5px;
     background-color: #FFFFEF;
 }
-
+*/
 /*Tab test
 .tabmenu li a {  
 border: none;  
@@ -287,7 +366,7 @@ border:none;
 }
 */
 /*Submit Buttons, stolen from r/mylittlepony*/
-
+/*
 .submit .morelink { 
     border-radius: 3px;
     border: 0px !important;
@@ -321,7 +400,7 @@ border:none;
 
 .md blockquote {
     border-left: 2px solid #336699;
-}
+}*/
 /* Changes ad box position */
 /*#ad-frame, #ad_main {
     margin-left: -29px;
@@ -331,8 +410,11 @@ border:none;
     margin-left: -29px;
 }*/
 
-/* Kills the community button/nub/spacer */
+/* Kills the community button/nub/spacer */ /*
   .sidebox.create .morelink {display: none;}
   .sidebox.submit .spacer a, .sidebox.create .spacer a {display: none;}
   .morelink .nub, .morelink .nub:hover {display: none;}
   .sidebox .spacer {display: none;}
+*/
+/*****************************************************Here begins MLPDS's CSS************************************************/
+

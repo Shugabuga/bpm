@@ -1,3 +1,41 @@
+/* Temp CATG2 Code */
+
+.side .titlebox .usertext-body > .md > p:nth-child(1) > a {display:block;background:#cee3f8;text-align:center;padding:10px 0px;border-radius:3px;margin:10px -10px;border:1px solid #9af;box-shadow:0 0 10px rgba(0,0,50,0.2);}
+
+/* Custom Flairs */
+.flair-creator-mlpiv {
+    color: white;
+    background: #00b6ff;
+    border: none;
+    padding: 1px 4px;
+}
+.flair-creator-rubypinch{
+    color: #f33;
+    background: #333;
+    border: none;
+    padding: 1px 4px;
+}
+
+
+/* Report form */
+.reportform.active:before {
+    content: "Notice: Please only report actual rule infractions, DO NOT use the report function as a way of suggesting rules or telling the moderators about your opinions.";
+    display: block;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    border: 1px solid #e2e2e2;
+    border-radius: 0;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: -6px;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 20px;
+    position: relative;
+    background: hsl(0, 100%, 85%);
+}
+
+
 /* Header */
     /* Tail overhang in header */
         #header-img{
@@ -13,19 +51,23 @@
             content: ' cloppers'}
         .users-online .number:after {
             content: ' clopping'}
-    /* Style tweaks */  /* TODO: check if need removing */
-        .titlebox strong {
-            font-size: medium}
-        .titlebox del {
-            color: white}
-        .titlebox em {
-            font-size: 9px;
-            text-decoration: none;
-            font-style: normal}
-        .titlebox strong em {
-            font-size: 8px;
-            font-style: normal;
-            font-weight: normal}
+    /* Styles for the sidebar md itself */
+        .side .md > h2 {
+            text-align: center;
+            border-top: 1px dotted #999;
+            border-bottom: 1px dotted #999}
+        .side .md > h2:first-of-type {
+            display: flex}
+        .side .md > h2:first-of-type > * {
+            flex: 1 0 0}
+        .side .md > h2:first-of-type > *+* {
+            border-left: 1px dotted #999}
+        .side .md > h3{
+            text-align: center}
+        .side .md p {
+            text-align: justify;
+            margin-left: 15px;
+            margin-right: 15px}
 
 /* Submission page */
     /* Help text 1 */
@@ -66,7 +108,7 @@
 
 /* Flair */
     /* Standard flair */
-        .flair {
+        .flair-cutiemark-icon {
             padding: 0;
             background: none;
             color: black;
@@ -76,67 +118,67 @@
             display: inline-block;
             width: 16px;
             height: 16px}
-        .flair-rainbowdash{background-position:0px 0px}
-        .flair-twilight{background-position:-16px 0px}
-        .flair-fluttershy{background-position:0px -16px}
-        .flair-applejack{background-position:-16px -16px}
-        .flair-pinkiepie{background-position:0px -32px}
-        .flair-pinkiepiecmc{background-position:0px -32px}
-        .flair-rarity{background-position:-16px -32px}
-        .flair-trixie{background-position:0px -48px}
-        .flair-cmc{background-position:-16px -48px}
-        .flair-cmcchinchy{background-position:-16px -48px;margin-left:5px}
-        .flair-luna{background-position:0px -64px}
-        .flair-celestia{background-position:-16px -64px}
-        .flair-derpy{background-position:0px -80px}
-        .flair-vinyl{background-position:-16px -80px}
-        .flair-lyra{background-position:0px -96px}
-        .flair-bonbon{background-position:-16px -96px}
-        .flair-octavia{background-position:0px -112px}
-        .flair-doctor{background-position:-16px -112px}
-        .flair-mac{background-position:0px -128px}
-        .flair-colgate{background-position:-16px -128px}
-        .flair-berry{background-position:-0px -144px}
-        .flair-pokey{background-position:-16px -144px}
-        .flair-roseluck{background-position:-0px -160px}
-        .flair-zecora{background-position:-16px -160px}
-        .flair-seafoam{background-position:-0px -176px}
-        .flair-carrottop{background-position:-16px -176px}
-        .flair-screwball{background-position:-0px -192px}
-        .flair-redheart{background-position:-16px -192px}
-        .flair-caramel{background-position:-0px -208px}
-        .flair-braeburn{background-position:-16px -208px}
-        .flair-wonderbolts{background-position:-0px -224px}
-        .flair-shadowbolts{background-position:-16px -224px}
-        .flair-scootaloo{background-position:-0px -240px}
-        .flair-applebloom{background-position:-16px -240px}
-        .flair-sweetiebelle{background-position:-0px -256px}
-        .flair-davenport{background-position:-16px -256px}
-        .flair-cheerilee{background-position:-0px -272px}
-        .flair-nightmaremoon{background-position:-16px -272px}
-        .flair-blueblood{background-position:-0px -288px}
-        .flair-daring{background-position:-16px -288px}
-        .flair-mrcake{background-position:-0px -304px}
-        .flair-mrscake{background-position:-16px -304px}
-        .flair-flam{background-position:-0px -320px}
-        .flair-flim{background-position:-16px -320px}
-        .flair-silverspoon{background-position:-0px -336px}
-        .flair-diamondtiara{background-position:-16px -336px}
-        .flair-snips{background-position:-0px -352px}
-        .flair-snails{background-position:-16px -352px}
-        .flair-twist{background-position:-0px -368px}
-        .flair-gaben{background-position:-16px -368px}
-        .flair-sparkler{background-position:-0px -384px}
-        .flair-disco{background-position:-16px -384px}
-        .flair-fancypants{background-position:-0px -400px}
-        .flair-fleur{background-position:-16px -400px}
-        .flair-cadence{background-position:-0px -416px}
-        .flair-shiningarmor{background-position:-16px -416px}
-        .flair-filthyrich{background-position:-0px -432px}
-        .flair-hoitytoity{background-position:-16px -432px}
+        .flair-cutiemark-icon.flair-rainbowdash{background-position:0px 0px}
+        .flair-cutiemark-icon.flair-twilight{background-position:-16px 0px}
+        .flair-cutiemark-icon.flair-fluttershy{background-position:0px -16px}
+        .flair-cutiemark-icon.flair-applejack{background-position:-16px -16px}
+        .flair-cutiemark-icon.flair-pinkiepie{background-position:0px -32px}
+        .flair-cutiemark-icon.flair-pinkiepiecmc{background-position:0px -32px}
+        .flair-cutiemark-icon.flair-rarity{background-position:-16px -32px}
+        .flair-cutiemark-icon.flair-trixie{background-position:0px -48px}
+        .flair-cutiemark-icon.flair-cmc{background-position:-16px -48px}
+        .flair-cutiemark-icon.flair-cmcchinchy{background-position:-16px -48px;margin-left:5px}
+        .flair-cutiemark-icon.flair-luna{background-position:0px -64px}
+        .flair-cutiemark-icon.flair-celestia{background-position:-16px -64px}
+        .flair-cutiemark-icon.flair-derpy{background-position:0px -80px}
+        .flair-cutiemark-icon.flair-vinyl{background-position:-16px -80px}
+        .flair-cutiemark-icon.flair-lyra{background-position:0px -96px}
+        .flair-cutiemark-icon.flair-bonbon{background-position:-16px -96px}
+        .flair-cutiemark-icon.flair-octavia{background-position:0px -112px}
+        .flair-cutiemark-icon.flair-doctor{background-position:-16px -112px}
+        .flair-cutiemark-icon.flair-mac{background-position:0px -128px}
+        .flair-cutiemark-icon.flair-colgate{background-position:-16px -128px}
+        .flair-cutiemark-icon.flair-berry{background-position:-0px -144px}
+        .flair-cutiemark-icon.flair-pokey{background-position:-16px -144px}
+        .flair-cutiemark-icon.flair-roseluck{background-position:-0px -160px}
+        .flair-cutiemark-icon.flair-zecora{background-position:-16px -160px}
+        .flair-cutiemark-icon.flair-seafoam{background-position:-0px -176px}
+        .flair-cutiemark-icon.flair-carrottop{background-position:-16px -176px}
+        .flair-cutiemark-icon.flair-screwball{background-position:-0px -192px}
+        .flair-cutiemark-icon.flair-redheart{background-position:-16px -192px}
+        .flair-cutiemark-icon.flair-caramel{background-position:-0px -208px}
+        .flair-cutiemark-icon.flair-braeburn{background-position:-16px -208px}
+        .flair-cutiemark-icon.flair-wonderbolts{background-position:-0px -224px}
+        .flair-cutiemark-icon.flair-shadowbolts{background-position:-16px -224px}
+        .flair-cutiemark-icon.flair-scootaloo{background-position:-0px -240px}
+        .flair-cutiemark-icon.flair-applebloom{background-position:-16px -240px}
+        .flair-cutiemark-icon.flair-sweetiebelle{background-position:-0px -256px}
+        .flair-cutiemark-icon.flair-davenport{background-position:-16px -256px}
+        .flair-cutiemark-icon.flair-cheerilee{background-position:-0px -272px}
+        .flair-cutiemark-icon.flair-nightmaremoon{background-position:-16px -272px}
+        .flair-cutiemark-icon.flair-blueblood{background-position:-0px -288px}
+        .flair-cutiemark-icon.flair-daring{background-position:-16px -288px}
+        .flair-cutiemark-icon.flair-mrcake{background-position:-0px -304px}
+        .flair-cutiemark-icon.flair-mrscake{background-position:-16px -304px}
+        .flair-cutiemark-icon.flair-flam{background-position:-0px -320px}
+        .flair-cutiemark-icon.flair-flim{background-position:-16px -320px}
+        .flair-cutiemark-icon.flair-silverspoon{background-position:-0px -336px}
+        .flair-cutiemark-icon.flair-diamondtiara{background-position:-16px -336px}
+        .flair-cutiemark-icon.flair-snips{background-position:-0px -352px}
+        .flair-cutiemark-icon.flair-snails{background-position:-16px -352px}
+        .flair-cutiemark-icon.flair-twist{background-position:-0px -368px}
+        .flair-cutiemark-icon.flair-gaben{background-position:-16px -368px}
+        .flair-cutiemark-icon.flair-sparkler{background-position:-0px -384px}
+        .flair-cutiemark-icon.flair-disco{background-position:-16px -384px}
+        .flair-cutiemark-icon.flair-fancypants{background-position:-0px -400px}
+        .flair-cutiemark-icon.flair-fleur{background-position:-16px -400px}
+        .flair-cutiemark-icon.flair-cadence{background-position:-0px -416px}
+        .flair-cutiemark-icon.flair-shiningarmor{background-position:-16px -416px}
+        .flair-cutiemark-icon.flair-filthyrich{background-position:-0px -432px}
+        .flair-cutiemark-icon.flair-hoitytoity{background-position:-16px -432px}
     /* Custom flairs */
         /* Switchy */
-            .flair-switchy {
+            .flair-cutiemark-icon.flair-switchy {
                 background-image: url(%%switchymark%%)}
         /* FA_Mirror */
             .flair-famirror {

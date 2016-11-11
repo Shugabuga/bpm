@@ -25,12 +25,17 @@
 # - Sign XPI
 # $ make www
 # $ make sync
+# - chmod 644
 # $ git ci -m "Bump version to x.y"
 # $ git push github master
 # - Test
 # - Make thread
 
+<<<<<<< HEAD
 VERSION = 66.232
+=======
+VERSION = 66.252
+>>>>>>> Rothera/master
 
 CONTENT_SCRIPT := \
     addon/header.js addon/utils.js addon/browser.js \
@@ -64,6 +69,8 @@ www: web/* build/betterponymotes-*.mozsucks-*.xpi build/betterponymotes.update.r
 	cp build/betterponymotes-*.mozsucks-*.xpi www/betterponymotes_$(VERSION).xpi
 
 sync:
+	chmod 644 animotes/*
+	chmod 644 www/*
 	rsync -e "ssh -p 40719" -zvLr --delete animotes/ lyra@ponymotes.net:/var/www/ponymotes.net/animotes
 	rsync -e "ssh -p 40719" -zvLr --delete www/ lyra@ponymotes.net:/var/www/ponymotes.net/bpm
 
@@ -85,11 +92,17 @@ build/export.json.bz2: build/export.json
 build/export.json: $(EMOTE_DATA)
 	./bpexport.py --json build/export.json
 
+<<<<<<< HEAD
 build/betterponymotes.xpi: $(ADDON_DATA) addon/firefox/main.js
 	mkdir -p build/firefox/lib build/firefox/data
+=======
+build/betterponymotes.xpi: $(ADDON_DATA) addon/fx-main.js addon/fx-install.rdf
+	mkdir -p build/firefox/data
+>>>>>>> Rothera/master
 
 	sed "s/\/\*{{version}}\*\//$(VERSION)/" < addon/firefox/package.json > build/firefox/package.json
 
+<<<<<<< HEAD
 	cp addon/firefox/main.js build/firefox/lib
 
 	cp build/betterponymotes.js build/firefox/data
@@ -104,10 +117,27 @@ build/betterponymotes.xpi: $(ADDON_DATA) addon/firefox/main.js
 	cp addon/content/options.html build/firefox/data
 	cp addon/content/options.js build/firefox/data
 	cp addon/common/pref-setup.js build/firefox/lib
+=======
+	cp addon/fx-main.js build/firefox/index.js
 
-	cfx xpi --update-url=https://ponymotes.net/bpm/betterponymotes.update.rdf --pkgdir=build/firefox --force-mobile
-	./mungexpi.py betterponymotes.xpi build/betterponymotes.xpi
-	rm betterponymotes.xpi
+	cp build/betterponymotes.js build/firefox/data
+	cp build/bpm-resources.js build/firefox/data
+	cp build/bpm-resources.js build/firefox
+	cp build/emote-classes.css build/firefox/data
+
+	cp addon/bootstrap.css build/firefox/data
+	cp addon/bpmotes.css build/firefox/data
+	cp addon/combiners-nsfw.css build/firefox/data
+	cp addon/extracss-pure.css build/firefox/data
+	cp addon/extracss-webkit.css build/firefox/data
+	cp addon/options.css build/firefox/data
+	cp addon/options.html build/firefox/data
+	cp addon/options.js build/firefox/data
+	cp addon/pref-setup.js build/firefox
+>>>>>>> Rothera/master
+
+	cd build/firefox && ../../node_modules/.bin/jpm xpi
+	./mungexpi.py $(VERSION) addon/fx-install.rdf build/firefox/*.xpi build/betterponymotes.xpi
 
 build/betterponymotes.update.rdf: build/betterponymotes-*.mozsucks-*.xpi
 	uhura -k betterponymotes.pem build/betterponymotes-*.mozsucks-*.xpi https://ponymotes.net/bpm/betterponymotes_$(VERSION).xpi > build/betterponymotes.update.rdf
@@ -136,6 +166,7 @@ build/chrome.zip: $(ADDON_DATA) addon/chrome/background.html addon/chrome/backgr
 	cp addon/common/pref-setup.js build/chrome
 
 	cp betterponymotes.pem build/chrome/key.pem
+	# Uncompressed due to prior difficulties with the webstore
 	cd build/chrome && zip -0 ../chrome.zip *
 
 build/BPM.safariextension: $(ADDON_DATA) addon/safari/Settings.plist addon/safari/background.html addon/safari/background.js

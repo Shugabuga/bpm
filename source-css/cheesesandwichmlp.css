@@ -1,6 +1,6 @@
 /*** Thumbnails ***/
 
-.thumbnail:empty { background-image: url(%%thumbnails%%) !important }
+.thumbnail:empty { background-image: url(%%thumbnails%%) !important; height: 50px }
 .thumbnail.self { background-position: -0px -120px !important }
 .thumbnail.nsfw { visibility: hidden !important }
 .thumbnail.default { background-position: -0px -70px !important }
@@ -18,8 +18,7 @@
 .linkflair-spoilers[data-fullname$="e"] .thumbnail, .linkflair-spoilers[data-fullname$="n"] .thumbnail,
 .linkflair-spoilers[data-fullname$="t"] .thumbnail, .linkflair-spoilers[data-fullname$="a"] .thumbnail { background-position: -0px -170px !important }
 
-.linkflair-spoilers .thumbnail.self { height: 64px !important }
-
+.linkflair-spoilers .thumbnail.self { height: 64px !important; background-position: 0 -120px !important }
 
 /*** Rating Tags ***/
 
@@ -88,6 +87,8 @@ body { background: url(%%colt%%) no-repeat fixed center center }
 .sidecontentbox .helplink + .title h1 { font-size: 0 !important }
 .sidecontentbox .helplink + .title h1:before { font-size: 10pt !important; content: "MODERATORS" }
 .sidecontentbox .helplink+.title+.content li:nth-of-type(4n) { display: none }
+
+.linkflairlabel { max-width: none }
 
 /*** Style Buttons ***/
 
@@ -432,17 +433,17 @@ a[href|="/cheesetrot"] {
 /*** Flairs ***/
 
 .flair {
-    padding: 0;
-    background: none;
-    color: black;
-    border: 0;
-    border-radius: 0;
-    background-image: url(%%flairs%%);
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    text-indent: -9999px;
-    line-height: 240%;
+  padding: 0;
+  background: none;
+  color: black;
+  border: 0;
+  border-radius: 0;
+  background-image: url(%%flair-table%%);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  line-height: 240%;
 }
 
 .flair-rainbowdash { background-position: 0 0; }
@@ -534,19 +535,35 @@ a[href|="/cheesetrot"] {
 .flair-troubleshoes { background-position: 0 -2200%; }
 .flair-screwloose { background-position: -100% -2200%; }
 .flair-bulkbiceps { background-position: -200% -2200%; }
-.flair-surprise { background-position: 0 -2300%; }
-.flair-snowdrop { background-position: -100% -2300%; }
-.flair-lightning { background-position: -200% -2300%; }
-.flair-peachbottom { background-position: -300% -2300%; }
-.flair-harshwhinny { background-position: 0 -2400%; }
-.flair-adagiodazzle { background-position: -100% -2400%; }
-.flair-ariablaze { background-position: -200% -2400%; }
-.flair-sonatadusk { background-position: -300% -2400%; }
-.flair-raindrops { background-position: 0 -2500%; }
-.flair-babsseed { background-position: -100% -2500%; }
-.flair-moondancer { background-position: -200% -2500%; }
-.flair-fleetfoot { background-position: -300% -2500%; }
-.flair-beautybrass { background-position: 0 -2600%; }
+.flair-photofinish { background-position: 0 -2300%; }
+.flair-lightningdust { background-position: -100% -2300%; }
+.flair-babsseed { background-position: -200% -2300%; }
+.flair-cherryjubilee { background-position: -300% -2300%; }
+.flair-adagiodazzle { background-position: 0 -2400%; }
+.flair-ariablaze { background-position: -100% -2400%; }
+.flair-sonatadusk { background-position: -200% -2400%; }
+.flair-moondancer { background-position: -300% -2400%; }
+.flair-igneousrock { background-position: 0 -2500%; }
+.flair-cloudyquartz { background-position: -100% -2500%; }
+.flair-limestonepie { background-position: -200% -2500%; }
+.flair-marblepie { background-position: -300% -2500%; }
+.flair-coloratura { background-position: 0 -2600%; }
+.flair-indigozap { background-position: -100% -2600%; }
+.flair-lemonzest { background-position: -200% -2600%; }
+.flair-soursweet { background-position: -300% -2600%; }
+.flair-sugarcoat { background-position: 0 -2700%; }
+.flair-sunnyflare { background-position: -100% -2700%; }
+.flair-sunburst { background-position: -200% -2700%; }
+.flair-gilda { background-position: -300% -2700%; }
+.flair-zephyrbreeze { background-position: 0 -2800%; }
+.flair-quibblepants { background-position: -100% -2800%; }
+.flair-surprise { background-position: 0 -2900%; }
+.flair-snowdrop { background-position: -100% -2900%; }
+.flair-peachbottom { background-position: -200% -2900%; }
+.flair-harshwhinny { background-position: -300% -2900%; }
+.flair-raindrops { background-position: 0 -3000%; }
+.flair-fleetfoot { background-position: -100% -3000%; }
+.flair-beautybrass { background-position: -200% -3000%; }
 
 START-PONYSCRIPT-IGNORE { color: red; }
 
@@ -556,7 +573,7 @@ a[href|="/mirrorportal"] {
   float:left;
   width: 59px;
   height: 112px;
-  background-position: 0 0;
+  cursor: default;
   background-image: url(%%portal%%) !important;
 }
 

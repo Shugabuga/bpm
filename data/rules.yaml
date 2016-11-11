@@ -21,12 +21,13 @@
 Subreddits:
 # NOTE: Don't forget to update web/index.html after editing this.
 - adagiodazzle
-- adery
 - ademotes
+- adery
 - adviceponies
 - afterplounge
 - ainbowdash
 - anotherponymotessub
+- antisonicmotes
 - applebloom
 - appledashquisition
 - applefritter
@@ -50,21 +51,26 @@ Subreddits:
 - clopmotes
 - cloudchasermotes
 - colgateinquisition
+- coloratura
 - comicsquisition
 - cuttershy
 - daylightemotes
 - desktopponies
+- discord
 - equestriagirls
 - falloutequestria
 - flashsentry
+- flimflambrothers
 - flitter
 - flitterquisition
+- flurryheart
 - flutquisition
 - flutterlounge
 - freepizzaspizzashop
 - futemotes
 - gallopfrey
 - glimmerquisition
+- heyitsshugamotes
 - hugemotes
 - idliketobeatree
 - ilovedashie
@@ -74,7 +80,9 @@ Subreddits:
 - maudpie
 - minuette
 - mlas1animotes
+- mlpccg
 - mlpdrawingschool
+- mlpgabby
 - mlplounge
 - mlploungesteamgroup
 - mlpoc
@@ -98,6 +106,7 @@ Subreddits:
 - mylittlefoodmanes
 - mylittlefortress
 - mylittlefriends
+- mylittlegaming
 - mylittleicons
 - mylittlekindle
 - mylittlekitchen
@@ -124,6 +133,7 @@ Subreddits:
 - mylittlewelcomewagon
 - mylittlewtf
 - nightglider
+- octavia
 - onetrueprincess
 - pankakke
 - partyfavor
@@ -131,6 +141,7 @@ Subreddits:
 - pinkquisition
 - ploungeafterdark
 - ploungemafia
+- ponk
 - ponyanarchism
 - ponycountdown
 - ponyloungerts
@@ -138,19 +149,24 @@ Subreddits:
 - ponymotesextra
 - ponymotesextra2
 - pwettypwinkpwincesses
+- roleplayponies
 - roseluck
+- rosequisition
 - rubypinch
 - sapphirestone
 - scootalounge
 - scratchquisition
 - seriouslyluna
 - sgap
+- shymotes
 - sombra
 - sonatadusk
 - spanishmeerkat
 - speedingturtle
 - spitquisition
+- starlightglimmer
 - sugarbelle
+- sunburst
 - sunsetshimmer
 - surprise
 - sweetie_belle
@@ -160,8 +176,8 @@ Subreddits:
 - tbpimagedump
 - tbpimagedump2
 - thebelletower
-- thecane
 - thebestpony
+- thecane
 - themirishponies
 - thepleasurehub
 - trixquisition
@@ -270,10 +286,13 @@ Conflicts:
   /sadlyra:       r/mylittleonions        # Conflict with r/mylittleanime
   /shrug:         r/vinylscratch          # Conflict with r/mylittlecirclejerk
   /sphlyrafun:    r/mylittlensfw          # Conflict with r/mylittlechaos
+  /starlighthappy: r/glimmerquisition     # Conflict with r/starlightglimmer
+  /starry:        r/sombra                # Conflict with r/heyitsshugamotes
   /t18:           r/mylittlefoodmanes     # Conflict with r/tacoshy
   /tavicheer:     r/taviquisition         # Conflict with r/mlplounge
   /theydied:      r/ponymotes             # Conflict with r/ploungemafia
   /tonightyou:    r/mlploungesteamgroup   # Duplicated to r/ponyloungerts
+  /tsc:           r/troubleshoes          # Duplicated to r/mylittlegaming
   /twibutt:       r/flutterlounge         # Conflict with r/braeburnquisition,
                                           # which came first, but is suggestive
   /twipoker:      r/mylittlewtf           # Conflict with r/thebestpony

@@ -1,0 +1,234 @@
+/*Who the fuck wrote this css? This looks like relt  */
+/* I wrote like 80% of this stylesheet! Don't mess it up plz --Memekip */
+/* I'm messing it up - SilverStar */
+/* o god plz no */
+
+/**********************************************************************************************/
+/* Makes us doctors */
+
+h1:after
+{
+font-size:12pt
+!important;
+content:", M.D."
+}
+
+/**********************************************************************************************/
+/* fake mail */
+#mail{
+    background: url(%%meme%%);
+    position:relative;
+    top:2px;
+}
+
+/**********************************************************************************************/
+/* memekip antisonic header*/
+#header {
+    background: url(%%memekip%%);
+    height: 285px;
+}
+
+/**********************************************************************************************/
+/* Change the word for 'readers' and the currently online */
+.subscribers .word, .users-online .word{
+display:none;
+}
+.subscribers .number:after { 
+content: ",000,000 Cute ponies"
+}
+.users-online .number:after { 
+content: ",000,000 Browsing dank memes" 
+}
+
+/**********************************************************************************************/
+/* Background Image */ 
+body {
+width: 100%;
+margin: 0 auto;
+background: url(%%Sweetie-dash%%) no-repeat fixed 50% 50%;
+}
+
+/**********************************************************************************************/
+/*Emotes!*/
+
+/*test emote human sweetie belle face*/
+a[href="/humanbelleface"]{background-position: 0px 0px; display: block; clear: none; float: left; width: 150px; height: 150px; background-image: url(%%testmeme%%)}
+
+
+a[href|="/godhatesdweebs"],a[href|="/toofabulous"],a[href|="/spikesaw"],a[href|="/discordshocked"],a[href|="/mayo"],a[href|="/pinkabomination"],a[href|="/pinkiedash"],a[href|="/wetbelle"],a[href|="/crystalbelle"],a[href|="/noanduzone"],a[href|="/fritters"],a[href|="/buttpose"],a[href="/datburd"],a[href="/bossybelle"],a[href="/discordsterror"]{
+   
+   display: block;
+   clear: none;
+   float: left;
+   background-image: url(%%spritesheet%%) }
+
+a[href="/godhatesdweebs"]{        background-position:    0px    0px; width: 250px; height: 200px}
+a[href="/spikesaw"]{              background-position: -250px    0px; width: 250px; height: 200px}
+a[href="/toofabulous"]{           background-position: -250px -200px; width: 250px; height: 200px}
+a[href="/discordshocked"]{        background-position:    0px -200px; width: 250px; height: 200px}
+a[href="/mayo"]{                  background-position: -500px -400px; width:  60px; height:  60px}
+a[href="/pinkabomination"]{       background-position: -250px -400px; width: 200px; height: 200px}
+a[href="/pinkiedash"]{            background-position:    0px -600px; width: 182px; height: 200px}
+a[href="/wetbelle"]{              background-position: -250px -600px; width: 180px; height: 200px}
+a[href="/crystalbelle"]{          background-position:    0px -800px; width: 200px; height: 200px}
+a[href="/noanduzone"]{            background-position: -250px -800px; width: 150px; height: 200px}
+a[href="/fritters"]{              background-position: -500px -800px; width: 189px; height: 200px}
+a[href="/datburd"]{               background-position:    0px -400px; width: 250px; height: 200px}
+a[href="/bossybelle"]{            background-position: -500px -200px; width: 155px; height: 200px}
+a[href="/discordsterror"]{        background-position: -500px    0px; width: 165px; height: 150px}
+
+/*Sheet 2*/
+
+a[href|="/rariball"],a[href|="/rdfillies"],a[href|="/sblook"],a[href|="/sweetiedash"],a[href|="/woonabelle"],a[href="/timidashie"],a[href="/ssanime"],a[href="/giantbelle"],a[href="/sbmic"],a[href="/tsrainspeak"],a[href="/kingsombrero"]{
+
+   display: block;
+   clear: none;
+   float: left;
+   background-image: url(%%table2%%) }
+
+a[href="/rariball"]{         background-position:    0px         0px; width: 100px; height: 100px}
+a[href="/rdfillies"]{        background-position:    -100px      0px; width: 200px; height: 175px}
+a[href="/sblook"]{           background-position:    0px      -200px; width: 200px; height: 190px}
+a[href="/sweetiedash"]{      background-position:    -200px   -200px; width: 200px; height: 165px}
+a[href="/woonabelle"]{       background-position:    -300px   0px;    width: 200px; height: 200px}
+a[href="/timidashie"]{       background-position:    0px   -400px;    width: 180px; height: 200px}
+a[href="/ssanime"]{          background-position:    0px   -600px;    width: 100px; height: 200px}
+a[href="/giantbelle"]{       background-position:    -400px   -200px; width: 200px; height: 200px}
+a[href="/sbmic"]{            background-position:    -500px      0px; width: 147px; height: 200px}
+a[href="/tsrainspeak"]{      background-position:    -700px      0px; width: 123px; height: 200px}
+a[href="/kingsombrero"]{      background-position:   -600px   -200px; width: 170px; height: 200px}
+
+/* Fritters Table <3 */
+
+a[href|="/fritballoon"],a[href|="/fritcharm"],a[href|="/frithairdown"],a[href|="/fritkirby"],a[href|="/fritlunch"],a[href|="/fritmunch"],a[href|="/fritsmoothie"]{
+
+display: block;
+   clear: none;
+   float: left;
+   background-image: url(%%fritterTable%%) }
+
+a[href="/fritballoon"]{ background-position:    0px    0px; width: 150px; height: 300px}
+a[href="/fritcharm"]{   background-position: -225px    0px; width: 70px;  height: 70px}
+a[href="/frithairdown"]{background-position: -150px    0px; width: 75px;  height: 150px}
+a[href="/fritkirby"]{   background-position: -225px  -75px; width: 70px;  height: 70px}
+a[href="/fritlunch"]{   background-position: -150px -150px; width: 150px; height: 150px}
+a[href="/fritmunch"]{   background-position: -300px -150px; width: 130px; height: 150px}
+a[href="/fritsmoothie"]{background-position: -300px    0px; width: 130px; height: 150px}
+
+/* Sheet 3 */
+a[href|="/chcutiemark"],a[href|="/crystalhoof"],a[href|="/flooferponker"],a[href|="/girlscoutcookies"],a[href|="/goldybelle"],a[href|="/kirlybelle"],a[href|="/pokesisters"],a[href|="/cutesockponk"],a[href|="/rdamazed"],a[href|="/sbbackpack"],a[href|="/sbkat"],a[href|="/sbmessymunch"],a[href|="/sweetiebat2"],a[href|="/skittledash"],a[href|="/twilydashiehug"],a[href|="/roblightsparkten"],a[href|="/hoodiefrits"]{
+
+   display: block;
+   clear: none;
+   float: left;
+   background-image: url(%%table3%%) }
+
+a[href="/chcutiemark"]{     background-position:   -5px      -150px; width: 140px; height: 150px}
+a[href="/crystalhoof"]{     background-position:   -5px         0px; width: 140px; height: 150px}
+a[href="/flooferponker"]{   background-position: -150px         0px; width: 150px; height: 150px}
+a[href="/girlscoutcookies"]{background-position:    0px      -300px; width: 250px; height: 150px}
+a[href="/goldybelle"]{      background-position: -150px      -150px; width: 150px; height: 150px}
+a[href="/kirlybelle"]{      background-position: -300px         0px; width:  75px; height: 150px}
+a[href="/pokesisters"]{     background-position: -300px      -150px; width: 150px; height: 150px}
+a[href="/rdamazed"]{        background-position: -450px      -300px; width: 274px; height: 150px}
+a[href="/sbbackpack"]{      background-position: -450px      -150px; width: 150px; height: 150px}
+a[href="/sbkat"]{           background-position: -600px      -198px; width: 150px; height: 102px}
+a[href="/sbmessymunch"]{    background-position: -450px         0px; width: 150px; height: 150px}
+a[href="/sweetiebat2"]{     background-position: -600px       -15px; width: 150px; height: 135px}
+a[href="/skittledash"]{     background-position:    0px      -450px; width: 300px; height: 150px}
+a[href="/twilydashiehug"]{  background-position: -300px      -450px; width: 150px; height: 150px}
+a[href="/roblightsparkten"]{background-position:    0px      -600px; width: 150px; height: 188px}
+a[href="/hoodiefrits"]{     background-position: -150px      -600px; width: 150px; height: 219px}
+
+
+
+/*the benger!*/
+a[href|="/cutesockponk"], a[href|="/theBengersFavoritestPonyEver"]
+{
+    background-image:url(%%table3%%);
+    width:126px;
+    height:150px;
+    display:block;
+    float:left;
+    background-position: 34% 35%;
+}
+
+
+/**********************************************************************************************/
+/* Colorful names! */
+.tagline .author[href*="user/a"] {color: rgb(18,41,114);}
+.tagline .author[href*="user/b"] {color: rgb(105,78,4);}
+.tagline .author[href*="user/c"] {color: rgb(118,113,24);}
+.tagline .author[href*="user/d"] {color: rgb(41,95,101);}
+.tagline .author[href*="user/e"] {color: rgb(80,49,21);}
+.tagline .author[href*="user/f"] {color: rgb(56,121,4);}
+.tagline .author[href*="user/g"] {color: rgb(54,115,30);}
+.tagline .author[href*="user/h"] {color: rgb(51,56,110);}
+.tagline .author[href*="user/i"] {color: rgb(101,96,84);}
+.tagline .author[href*="user/j"] {color: rgb(27,16,109);}
+.tagline .author[href*="user/k"] {color: rgb(112,35,22);}
+.tagline .author[href*="user/l"] {color: rgb(98,13,101);}
+.tagline .author[href*="user/m"] {color: rgb(102,3,87);}
+.tagline .author[href*="user/n"] {color: rgb(127,45,55);}
+.tagline .author[href*="user/o"] {color: rgb(100,125,104);}
+.tagline .author[href*="user/p"] {color: rgb(122,53,98);}
+.tagline .author[href*="user/q"] {color: rgb(126,108,86);}
+.tagline .author[href*="user/r"] {color: rgb(29,32,14);}
+.tagline .author[href*="user/s"] {color: rgb(11,5,111);}
+.tagline .author[href*="user/t"] {color: rgb(96,33,0);}
+.tagline .author[href*="user/u"] {color: rgb(78,17,35);}
+.tagline .author[href*="user/v"] {color: rgb(101,116,48);}
+.tagline .author[href*="user/w"] {color: rgb(74,91,52);}
+.tagline .author[href*="user/x"] {color: rgb(34,90,97);}
+.tagline .author[href*="user/y"] {color: rgb(90,63,94);}
+.tagline .author[href*="user/z"] {color: rgb(67,57,20);}
+.tagline .author[href*="user/A"] {color: rgb(38,56,0);}
+.tagline .author[href*="user/B"] {color: rgb(124,86,33);}
+.tagline .author[href*="user/C"] {color: rgb(11,98,39);}
+.tagline .author[href*="user/D"] {color: rgb(122,66,72);}
+.tagline .author[href*="user/E"] {color: rgb(123,16,89);}
+.tagline .author[href*="user/F"] {color: rgb(30,117,78);}
+.tagline .author[href*="user/G"] {color: rgb(79,64,41);}
+.tagline .author[href*="user/H"] {color: rgb(3,99,4);}
+.tagline .author[href*="user/I"] {color: rgb(100,62,67);}
+.tagline .author[href*="user/J"] {color: rgb(66,1,125);}
+.tagline .author[href*="user/K"] {color: rgb(86,39,54);}
+.tagline .author[href*="user/L"] {color: rgb(87,36,12);}
+.tagline .author[href*="user/M"] {color: rgb(121,47,110);}
+.tagline .author[href*="user/N"] {color: rgb(32,42,49);}
+.tagline .author[href*="user/O"] {color: rgb(104,37,65);}
+.tagline .author[href*="user/P"] {color: rgb(66,67,55);}
+.tagline .author[href*="user/Q"] {color: rgb(16,19,120);}
+.tagline .author[href*="user/R"] {color: rgb(58,22,91);}
+.tagline .author[href*="user/S"] {color: rgb(62,122,26);}
+.tagline .author[href*="user/T"] {color: rgb(2,61,27);}
+.tagline .author[href*="user/U"] {color: rgb(0,20,67);}
+.tagline .author[href*="user/V"] {color: rgb(54,108,104);}
+.tagline .author[href*="user/W"] {color: rgb(66,101,23);}
+.tagline .author[href*="user/X"] {color: rgb(49,5,65);}
+.tagline .author[href*="user/Y"] {color: rgb(98,110,103);}
+.tagline .author[href*="user/Z"] {color: rgb(36,48,42);}
+.tagline .author[href*="user/0"] {color: rgb(92,65,61);}
+.tagline .author[href*="user/1"] {color: rgb(84,124,84);}
+.tagline .author[href*="user/2"] {color: rgb(48,58,79);}
+.tagline .author[href*="user/3"] {color: rgb(74,61,12);}
+.tagline .author[href*="user/4"] {color: rgb(102,61,33);}
+.tagline .author[href*="user/5"] {color: rgb(42,115,13);}
+.tagline .author[href*="user/6"] {color: rgb(18,54,114);}
+.tagline .author[href*="user/7"] {color: rgb(41,104,120);}
+.tagline .author[href*="user/8"] {color: rgb(107,75,102);}
+.tagline .author[href*="user/9"] {color: rgb(82,112,23);}
+
+
+/**********************************************************************************************/
+/* No downdoots allowed */
+.down { display: none; }
+
+
+/**********************************************************************************************/
+/* What the fuck is this jesus christ  */
+/* i uncommented this to test it - hailtrixie*/
+/* I tested it and it seems to do literally nothing*/
+/*
+.shake,.shake-little,.shake-slow,.shake-hard,.shake-horizontal,.shake-vertical,.shake-rotate,.shake-opacity,.shake-crazy,.shake-chunk{display:inline-block;transform-origin:center center}.shake-freeze,.shake-constant.shake-constant--hover:hover,.shake-trigger:hover .shake-constant.shake-constant--hover{animation-play-state:paused}.shake-freeze:hover,.shake-trigger:hover .shake-freeze,.shake:hover,.shake-trigger:hover .shake,.shake-little:hover,.shake-trigger:hover .shake-little,.shake-slow:hover,.shake-trigger:hover .shake-slow,.shake-hard:hover,.shake-trigger:hover .shake-hard,.shake-horizontal:hover,.shake-trigger:hover .shake-horizontal,.shake-vertical:hover,.shake-trigger:hover .shake-vertical,.shake-rotate:hover,.shake-trigger:hover .shake-rotate,.shake-opacity:hover,.shake-trigger:hover .shake-opacity,.shake-crazy:hover,.shake-trigger:hover .shake-crazy,.shake-chunk:hover,.shake-trigger:hover .shake-chunk{animation-play-state:running}@keyframes shake{2%{transform:translate(1.5px, 1.5px) rotate(-0.5deg)}4%{transform:translate(-1.5px, 1.5px) rotate(1.5deg)}6%{transform:translate(1.5px, 2.5px) rotate(-0.5deg)}8%{transform:translate(1.5px, -0.5px) rotate(0.5deg)}10%{transform:translate(2.5px, 0.5px) rotate(0.5deg)}12%{transform:translate(-1.5px, -0.5px) rotate(1.5deg)}14%{transform:translate(1.5px, 1.5px) rotate(1.5deg)}16%{transform:translate(0.5px, 0.5px) rotate(-0.5deg)}18%{transform:translate(-1.5px, -1.5px) rotate(1.5deg)}20%{transform:translate(1.5px, 2.5px) rotate(1.5deg)}22%{transform:translate(0.5px, 2.5px) rotate(1.5deg)}24%{transform:translate(2.5px, 1.5px) rotate(-0.5deg)}26%{transform:translate(0.5px, 1.5px) rotate(1.5deg)}28%{transform:translate(-0.5px, -1.5px) rotate(-0.5deg)}30%{transform:translate(-0.5px, 1.5px) rotate(-0.5deg)}32%{transform:translate(1.5px, 1.5px) rotate(-0.5deg)}34%{transform:translate(-1.5px, 0.5px) rotate(1.5deg)}36%{transform:translate(2.5px, 0.5px) rotate(-0.5deg)}38%{transform:translate(-0.5px, -0.5px) rotate(0.5deg)}40%{transform:translate(0.5px, -1.5px) rotate(-0.5deg)}42%{transform:translate(0.5px, 1.5px) rotate(1.5deg)}44%{transform:translate(2.5px, 0.5px) rotate(-0.5deg)}46%{transform:translate(2.5px, 0.5px) rotate(1.5deg)}48%{transform:translate(1.5px, 1.5px) rotate(-0.5deg)}50%{transform:translate(-0.5px, -0.5px) rotate(1.5deg)}52%{transform:translate(2.5px, -1.5px) rotate(0.5deg)}54%{transform:translate(0.5px, 2.5px) rotate(1.5deg)}56%{transform:translate(0.5px, 2.5px) rotate(-0.5deg)}58%{transform:translate(1.5px, 0.5px) rotate(-0.5deg)}60%{transform:translate(1.5px, 1.5px) rotate(-0.5deg)}62%{transform:translate(2.5px, -1.5px) rotate(1.5deg)}64%{transform:translate(2.5px, 1.5px) rotate(0.5deg)}66%{transform:translate(1.5px, 2.5px) rotate(1.5deg)}68%{transform:translate(-0.5px, 0.5px) rotate(0.5deg)}70%{transform:translate(-1.5px, 2.5px) rotate(1.5deg)}72%{transform:translate(1.5px, 2.5px) rotate(1.5deg)}74%{transform:translate(-0.5px, 2.5px) rotate(0.5deg)}76%{transform:translate(1.5px, 2.5px) rotate(0.5deg)}78%{transform:translate(2.5px, 0.5px) rotate(0.5deg)}80%{transform:translate(-1.5px, -0.5px) rotate(0.5deg)}82%{transform:translate(-0.5px, -1.5px) rotate(0.5deg)}84%{transform:translate(1.5px, 1.5px) rotate(-0.5deg)}86%{transform:translate(-0.5px, 2.5px) rotate(0.5deg)}88%{transform:translate(-1.5px, 2.5px) rotate(0.5deg)}90%{transform:translate(-0.5px, -0.5px) rotate(-0.5deg)}92%{transform:translate(2.5px, 1.5px) rotate(-0.5deg)}94%{transform:translate(1.5px, 2.5px) rotate(0.5deg)}96%{transform:translate(0.5px, 2.5px) rotate(-0.5deg)}98%{transform:translate(2.5px, 0.5px) rotate(1.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake:hover,.shake-trigger:hover .shake,.shake.shake-freeze,.shake.shake-constant{animation:shake 100ms ease-in-out infinite}@keyframes shake-little{2%{transform:translate(1px, 1px) rotate(0.5deg)}4%{transform:translate(1px, 1px) rotate(0.5deg)}6%{transform:translate(1px, 1px) rotate(0.5deg)}8%{transform:translate(1px, 1px) rotate(0.5deg)}10%{transform:translate(1px, 1px) rotate(0.5deg)}12%{transform:translate(1px, 0px) rotate(0.5deg)}14%{transform:translate(0px, 1px) rotate(0.5deg)}16%{transform:translate(1px, 0px) rotate(0.5deg)}18%{transform:translate(1px, 0px) rotate(0.5deg)}20%{transform:translate(0px, 0px) rotate(0.5deg)}22%{transform:translate(0px, 0px) rotate(0.5deg)}24%{transform:translate(0px, 1px) rotate(0.5deg)}26%{transform:translate(0px, 1px) rotate(0.5deg)}28%{transform:translate(0px, 1px) rotate(0.5deg)}30%{transform:translate(1px, 1px) rotate(0.5deg)}32%{transform:translate(0px, 1px) rotate(0.5deg)}34%{transform:translate(0px, 1px) rotate(0.5deg)}36%{transform:translate(1px, 0px) rotate(0.5deg)}38%{transform:translate(1px, 1px) rotate(0.5deg)}40%{transform:translate(1px, 0px) rotate(0.5deg)}42%{transform:translate(1px, 1px) rotate(0.5deg)}44%{transform:translate(0px, 0px) rotate(0.5deg)}46%{transform:translate(1px, 0px) rotate(0.5deg)}48%{transform:translate(1px, 1px) rotate(0.5deg)}50%{transform:translate(0px, 0px) rotate(0.5deg)}52%{transform:translate(1px, 1px) rotate(0.5deg)}54%{transform:translate(0px, 0px) rotate(0.5deg)}56%{transform:translate(0px, 1px) rotate(0.5deg)}58%{transform:translate(1px, 1px) rotate(0.5deg)}60%{transform:translate(0px, 0px) rotate(0.5deg)}62%{transform:translate(0px, 0px) rotate(0.5deg)}64%{transform:translate(0px, 0px) rotate(0.5deg)}66%{transform:translate(0px, 1px) rotate(0.5deg)}68%{transform:translate(1px, 1px) rotate(0.5deg)}70%{transform:translate(0px, 0px) rotate(0.5deg)}72%{transform:translate(0px, 0px) rotate(0.5deg)}74%{transform:translate(0px, 0px) rotate(0.5deg)}76%{transform:translate(0px, 1px) rotate(0.5deg)}78%{transform:translate(0px, 0px) rotate(0.5deg)}80%{transform:translate(1px, 1px) rotate(0.5deg)}82%{transform:translate(0px, 0px) rotate(0.5deg)}84%{transform:translate(1px, 0px) rotate(0.5deg)}86%{transform:translate(1px, 1px) rotate(0.5deg)}88%{transform:translate(1px, 1px) rotate(0.5deg)}90%{transform:translate(1px, 1px) rotate(0.5deg)}92%{transform:translate(1px, 1px) rotate(0.5deg)}94%{transform:translate(0px, 1px) rotate(0.5deg)}96%{transform:translate(0px, 1px) rotate(0.5deg)}98%{transform:translate(0px, 1px) rotate(0.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-little:hover,.shake-trigger:hover .shake-little,.shake-little.shake-freeze,.shake-little.shake-constant{animation:shake-little 100ms ease-in-out infinite}@keyframes shake-slow{2%{transform:translate(2px, -9px) rotate(2.5deg)}4%{transform:translate(-4px, 5px) rotate(-2.5deg)}6%{transform:translate(-8px, 8px) rotate(3.5deg)}8%{transform:translate(-7px, 4px) rotate(-1.5deg)}10%{transform:translate(7px, 0px) rotate(1.5deg)}12%{transform:translate(3px, 8px) rotate(-0.5deg)}14%{transform:translate(4px, 4px) rotate(0.5deg)}16%{transform:translate(-4px, -4px) rotate(3.5deg)}18%{transform:translate(-8px, -7px) rotate(3.5deg)}20%{transform:translate(-9px, 8px) rotate(2.5deg)}22%{transform:translate(-9px, -5px) rotate(-2.5deg)}24%{transform:translate(4px, -7px) rotate(-2.5deg)}26%{transform:translate(-1px, 3px) rotate(1.5deg)}28%{transform:translate(-3px, -7px) rotate(3.5deg)}30%{transform:translate(6px, -9px) rotate(2.5deg)}32%{transform:translate(8px, -5px) rotate(-2.5deg)}34%{transform:translate(7px, 8px) rotate(1.5deg)}36%{transform:translate(2px, 5px) rotate(-2.5deg)}38%{transform:translate(-6px, 0px) rotate(2.5deg)}40%{transform:translate(9px, 7px) rotate(-2.5deg)}42%{transform:translate(-2px, -2px) rotate(-0.5deg)}44%{transform:translate(0px, -6px) rotate(-2.5deg)}46%{transform:translate(-5px, 2px) rotate(1.5deg)}48%{transform:translate(-8px, -7px) rotate(3.5deg)}50%{transform:translate(-5px, -6px) rotate(-2.5deg)}52%{transform:translate(8px, 1px) rotate(-2.5deg)}54%{transform:translate(-1px, -1px) rotate(-2.5deg)}56%{transform:translate(5px, -1px) rotate(2.5deg)}58%{transform:translate(-6px, -8px) rotate(-2.5deg)}60%{transform:translate(5px, 5px) rotate(3.5deg)}62%{transform:translate(-4px, -2px) rotate(1.5deg)}64%{transform:translate(-5px, 7px) rotate(3.5deg)}66%{transform:translate(7px, 4px) rotate(0.5deg)}68%{transform:translate(-5px, -2px) rotate(-2.5deg)}70%{transform:translate(1px, 3px) rotate(-1.5deg)}72%{transform:translate(-6px, 0px) rotate(2.5deg)}74%{transform:translate(1px, 9px) rotate(2.5deg)}76%{transform:translate(10px, -5px) rotate(-2.5deg)}78%{transform:translate(-5px, 4px) rotate(3.5deg)}80%{transform:translate(-6px, 1px) rotate(0.5deg)}82%{transform:translate(9px, 10px) rotate(2.5deg)}84%{transform:translate(-1px, 5px) rotate(-1.5deg)}86%{transform:translate(4px, 1px) rotate(2.5deg)}88%{transform:translate(-5px, -7px) rotate(1.5deg)}90%{transform:translate(-8px, -2px) rotate(0.5deg)}92%{transform:translate(10px, -9px) rotate(-0.5deg)}94%{transform:translate(7px, 6px) rotate(-0.5deg)}96%{transform:translate(6px, 1px) rotate(-2.5deg)}98%{transform:translate(5px, 0px) rotate(1.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-slow:hover,.shake-trigger:hover .shake-slow,.shake-slow.shake-freeze,.shake-slow.shake-constant{animation:shake-slow 5s ease-in-out infinite}@keyframes shake-hard{2%{transform:translate(2px, -5px) rotate(2.5deg)}4%{transform:translate(4px, 6px) rotate(-1.5deg)}6%{transform:translate(-5px, 3px) rotate(-2.5deg)}8%{transform:translate(-8px, 7px) rotate(3.5deg)}10%{transform:translate(-2px, -8px) rotate(3.5deg)}12%{transform:translate(-9px, -1px) rotate(1.5deg)}14%{transform:translate(1px, -8px) rotate(-0.5deg)}16%{transform:translate(-3px, 10px) rotate(-1.5deg)}18%{transform:translate(9px, -4px) rotate(0.5deg)}20%{transform:translate(4px, 8px) rotate(2.5deg)}22%{transform:translate(3px, 2px) rotate(-0.5deg)}24%{transform:translate(-5px, 6px) rotate(2.5deg)}26%{transform:translate(-7px, -6px) rotate(0.5deg)}28%{transform:translate(3px, 0px) rotate(2.5deg)}30%{transform:translate(8px, -8px) rotate(2.5deg)}32%{transform:translate(-9px, -8px) rotate(2.5deg)}34%{transform:translate(-9px, 3px) rotate(2.5deg)}36%{transform:translate(-2px, 7px) rotate(2.5deg)}38%{transform:translate(8px, 7px) rotate(-1.5deg)}40%{transform:translate(4px, 0px) rotate(-1.5deg)}42%{transform:translate(-4px, -9px) rotate(-0.5deg)}44%{transform:translate(0px, -4px) rotate(2.5deg)}46%{transform:translate(4px, 2px) rotate(2.5deg)}48%{transform:translate(10px, -9px) rotate(2.5deg)}50%{transform:translate(3px, -6px) rotate(2.5deg)}52%{transform:translate(1px, 6px) rotate(0.5deg)}54%{transform:translate(3px, -1px) rotate(-1.5deg)}56%{transform:translate(-1px, -9px) rotate(0.5deg)}58%{transform:translate(7px, -4px) rotate(-0.5deg)}60%{transform:translate(2px, 0px) rotate(2.5deg)}62%{transform:translate(-5px, 3px) rotate(0.5deg)}64%{transform:translate(6px, -8px) rotate(3.5deg)}66%{transform:translate(1px, -3px) rotate(2.5deg)}68%{transform:translate(10px, 1px) rotate(1.5deg)}70%{transform:translate(0px, 7px) rotate(-0.5deg)}72%{transform:translate(-9px, 6px) rotate(3.5deg)}74%{transform:translate(8px, 0px) rotate(-0.5deg)}76%{transform:translate(0px, 5px) rotate(0.5deg)}78%{transform:translate(6px, 6px) rotate(-0.5deg)}80%{transform:translate(4px, 3px) rotate(-2.5deg)}82%{transform:translate(8px, -2px) rotate(3.5deg)}84%{transform:translate(0px, -8px) rotate(1.5deg)}86%{transform:translate(-2px, -8px) rotate(2.5deg)}88%{transform:translate(10px, -7px) rotate(2.5deg)}90%{transform:translate(2px, 10px) rotate(-0.5deg)}92%{transform:translate(-9px, 4px) rotate(2.5deg)}94%{transform:translate(-3px, 1px) rotate(1.5deg)}96%{transform:translate(-2px, -1px) rotate(0.5deg)}98%{transform:translate(7px, -9px) rotate(3.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-hard:hover,.shake-trigger:hover .shake-hard,.shake-hard.shake-freeze,.shake-hard.shake-constant{animation:shake-hard 100ms ease-in-out infinite}@keyframes shake-horizontal{2%{transform:translate(4px, 0) rotate(0)}4%{transform:translate(7px, 0) rotate(0)}6%{transform:translate(-2px, 0) rotate(0)}8%{transform:translate(-7px, 0) rotate(0)}10%{transform:translate(-1px, 0) rotate(0)}12%{transform:translate(-2px, 0) rotate(0)}14%{transform:translate(1px, 0) rotate(0)}16%{transform:translate(-8px, 0) rotate(0)}18%{transform:translate(-5px, 0) rotate(0)}20%{transform:translate(9px, 0) rotate(0)}22%{transform:translate(-5px, 0) rotate(0)}24%{transform:translate(6px, 0) rotate(0)}26%{transform:translate(2px, 0) rotate(0)}28%{transform:translate(2px, 0) rotate(0)}30%{transform:translate(-5px, 0) rotate(0)}32%{transform:translate(-7px, 0) rotate(0)}34%{transform:translate(10px, 0) rotate(0)}36%{transform:translate(1px, 0) rotate(0)}38%{transform:translate(-2px, 0) rotate(0)}40%{transform:translate(4px, 0) rotate(0)}42%{transform:translate(-8px, 0) rotate(0)}44%{transform:translate(5px, 0) rotate(0)}46%{transform:translate(9px, 0) rotate(0)}48%{transform:translate(6px, 0) rotate(0)}50%{transform:translate(-9px, 0) rotate(0)}52%{transform:translate(7px, 0) rotate(0)}54%{transform:translate(-9px, 0) rotate(0)}56%{transform:translate(-7px, 0) rotate(0)}58%{transform:translate(-8px, 0) rotate(0)}60%{transform:translate(3px, 0) rotate(0)}62%{transform:translate(-7px, 0) rotate(0)}64%{transform:translate(6px, 0) rotate(0)}66%{transform:translate(-4px, 0) rotate(0)}68%{transform:translate(-2px, 0) rotate(0)}70%{transform:translate(6px, 0) rotate(0)}72%{transform:translate(-9px, 0) rotate(0)}74%{transform:translate(7px, 0) rotate(0)}76%{transform:translate(2px, 0) rotate(0)}78%{transform:translate(-8px, 0) rotate(0)}80%{transform:translate(2px, 0) rotate(0)}82%{transform:translate(2px, 0) rotate(0)}84%{transform:translate(-4px, 0) rotate(0)}86%{transform:translate(-7px, 0) rotate(0)}88%{transform:translate(4px, 0) rotate(0)}90%{transform:translate(-6px, 0) rotate(0)}92%{transform:translate(-8px, 0) rotate(0)}94%{transform:translate(-3px, 0) rotate(0)}96%{transform:translate(4px, 0) rotate(0)}98%{transform:translate(-8px, 0) rotate(0)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-horizontal:hover,.shake-trigger:hover .shake-horizontal,.shake-horizontal.shake-freeze,.shake-horizontal.shake-constant{animation:shake-horizontal 100ms ease-in-out infinite}@keyframes shake-vertical{2%{transform:translate(0, 6px) rotate(0)}4%{transform:translate(0, -1px) rotate(0)}6%{transform:translate(0, -7px) rotate(0)}8%{transform:translate(0, -1px) rotate(0)}10%{transform:translate(0, 9px) rotate(0)}12%{transform:translate(0, 1px) rotate(0)}14%{transform:translate(0, 3px) rotate(0)}16%{transform:translate(0, 6px) rotate(0)}18%{transform:translate(0, 0px) rotate(0)}20%{transform:translate(0, 2px) rotate(0)}22%{transform:translate(0, 1px) rotate(0)}24%{transform:translate(0, 3px) rotate(0)}26%{transform:translate(0, 4px) rotate(0)}28%{transform:translate(0, 0px) rotate(0)}30%{transform:translate(0, -8px) rotate(0)}32%{transform:translate(0, 6px) rotate(0)}34%{transform:translate(0, 6px) rotate(0)}36%{transform:translate(0, -4px) rotate(0)}38%{transform:translate(0, 2px) rotate(0)}40%{transform:translate(0, -8px) rotate(0)}42%{transform:translate(0, -9px) rotate(0)}44%{transform:translate(0, -3px) rotate(0)}46%{transform:translate(0, 0px) rotate(0)}48%{transform:translate(0, -7px) rotate(0)}50%{transform:translate(0, 0px) rotate(0)}52%{transform:translate(0, 3px) rotate(0)}54%{transform:translate(0, -4px) rotate(0)}56%{transform:translate(0, 3px) rotate(0)}58%{transform:translate(0, -9px) rotate(0)}60%{transform:translate(0, 9px) rotate(0)}62%{transform:translate(0, -6px) rotate(0)}64%{transform:translate(0, 0px) rotate(0)}66%{transform:translate(0, -4px) rotate(0)}68%{transform:translate(0, 1px) rotate(0)}70%{transform:translate(0, 5px) rotate(0)}72%{transform:translate(0, 0px) rotate(0)}74%{transform:translate(0, -6px) rotate(0)}76%{transform:translate(0, -3px) rotate(0)}78%{transform:translate(0, 3px) rotate(0)}80%{transform:translate(0, 6px) rotate(0)}82%{transform:translate(0, 2px) rotate(0)}84%{transform:translate(0, -3px) rotate(0)}86%{transform:translate(0, 1px) rotate(0)}88%{transform:translate(0, 1px) rotate(0)}90%{transform:translate(0, 10px) rotate(0)}92%{transform:translate(0, -2px) rotate(0)}94%{transform:translate(0, -2px) rotate(0)}96%{transform:translate(0, -6px) rotate(0)}98%{transform:translate(0, -9px) rotate(0)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-vertical:hover,.shake-trigger:hover .shake-vertical,.shake-vertical.shake-freeze,.shake-vertical.shake-constant{animation:shake-vertical 100ms ease-in-out infinite}@keyframes shake-rotate{2%{transform:translate(0, 0) rotate(3.5deg)}4%{transform:translate(0, 0) rotate(4.5deg)}6%{transform:translate(0, 0) rotate(1.5deg)}8%{transform:translate(0, 0) rotate(2.5deg)}10%{transform:translate(0, 0) rotate(3.5deg)}12%{transform:translate(0, 0) rotate(0.5deg)}14%{transform:translate(0, 0) rotate(-5.5deg)}16%{transform:translate(0, 0) rotate(-1.5deg)}18%{transform:translate(0, 0) rotate(1.5deg)}20%{transform:translate(0, 0) rotate(6.5deg)}22%{transform:translate(0, 0) rotate(3.5deg)}24%{transform:translate(0, 0) rotate(6.5deg)}26%{transform:translate(0, 0) rotate(-0.5deg)}28%{transform:translate(0, 0) rotate(7.5deg)}30%{transform:translate(0, 0) rotate(6.5deg)}32%{transform:translate(0, 0) rotate(-3.5deg)}34%{transform:translate(0, 0) rotate(-1.5deg)}36%{transform:translate(0, 0) rotate(3.5deg)}38%{transform:translate(0, 0) rotate(7.5deg)}40%{transform:translate(0, 0) rotate(-0.5deg)}42%{transform:translate(0, 0) rotate(3.5deg)}44%{transform:translate(0, 0) rotate(7.5deg)}46%{transform:translate(0, 0) rotate(7.5deg)}48%{transform:translate(0, 0) rotate(3.5deg)}50%{transform:translate(0, 0) rotate(0.5deg)}52%{transform:translate(0, 0) rotate(2.5deg)}54%{transform:translate(0, 0) rotate(5.5deg)}56%{transform:translate(0, 0) rotate(2.5deg)}58%{transform:translate(0, 0) rotate(-4.5deg)}60%{transform:translate(0, 0) rotate(-4.5deg)}62%{transform:translate(0, 0) rotate(7.5deg)}64%{transform:translate(0, 0) rotate(0.5deg)}66%{transform:translate(0, 0) rotate(2.5deg)}68%{transform:translate(0, 0) rotate(2.5deg)}70%{transform:translate(0, 0) rotate(5.5deg)}72%{transform:translate(0, 0) rotate(5.5deg)}74%{transform:translate(0, 0) rotate(-2.5deg)}76%{transform:translate(0, 0) rotate(7.5deg)}78%{transform:translate(0, 0) rotate(2.5deg)}80%{transform:translate(0, 0) rotate(-6.5deg)}82%{transform:translate(0, 0) rotate(-0.5deg)}84%{transform:translate(0, 0) rotate(2.5deg)}86%{transform:translate(0, 0) rotate(5.5deg)}88%{transform:translate(0, 0) rotate(0.5deg)}90%{transform:translate(0, 0) rotate(-0.5deg)}92%{transform:translate(0, 0) rotate(-1.5deg)}94%{transform:translate(0, 0) rotate(-0.5deg)}96%{transform:translate(0, 0) rotate(0.5deg)}98%{transform:translate(0, 0) rotate(-4.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-rotate:hover,.shake-trigger:hover .shake-rotate,.shake-rotate.shake-freeze,.shake-rotate.shake-constant{animation:shake-rotate 100ms ease-in-out infinite}@keyframes shake-opacity{10%{transform:translate(-4px, 4px) rotate(-1.5deg);opacity:0.25}20%{transform:translate(-1px, 2px) rotate(0.5deg);opacity:1}30%{transform:translate(2px, -4px) rotate(-1.5deg);opacity:0.03}40%{transform:translate(-1px, -2px) rotate(1.5deg);opacity:0.55}50%{transform:translate(5px, -4px) rotate(1.5deg);opacity:0.09}60%{transform:translate(-1px, 1px) rotate(-1.5deg);opacity:0.97}70%{transform:translate(4px, 1px) rotate(0.5deg);opacity:0.96}80%{transform:translate(3px, 2px) rotate(2.5deg);opacity:0.83}90%{transform:translate(-2px, -4px) rotate(-1.5deg);opacity:0.09}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-opacity:hover,.shake-trigger:hover .shake-opacity,.shake-opacity.shake-freeze,.shake-opacity.shake-constant{animation:shake-opacity 0.5s ease-in-out infinite}@keyframes shake-crazy{10%{transform:translate(-10px, -19px) rotate(6deg);opacity:0.47}20%{transform:translate(-11px, 10px) rotate(5deg);opacity:0.82}30%{transform:translate(17px, -3px) rotate(-9deg);opacity:0.34}40%{transform:translate(11px, 19px) rotate(5deg);opacity:0.4}50%{transform:translate(-11px, 13px) rotate(1deg);opacity:0.97}60%{transform:translate(17px, -16px) rotate(7deg);opacity:0.24}70%{transform:translate(-10px, -12px) rotate(-6deg);opacity:0.56}80%{transform:translate(13px, -19px) rotate(-4deg);opacity:0.96}90%{transform:translate(-18px, -11px) rotate(3deg);opacity:0.49}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-crazy:hover,.shake-trigger:hover .shake-crazy,.shake-crazy.shake-freeze,.shake-crazy.shake-constant{animation:shake-crazy 100ms ease-in-out infinite}@keyframes shake-chunk{2%{transform:translate(5px, 2px) rotate(-12deg)}4%{transform:translate(-6px, 3px) rotate(1deg)}6%{transform:translate(3px, 6px) rotate(14deg)}8%{transform:translate(1px, 8px) rotate(1deg)}10%{transform:translate(-5px, 10px) rotate(0deg)}12%{transform:translate(-11px, 2px) rotate(7deg)}14%{transform:translate(4px, 15px) rotate(11deg)}16%{transform:translate(4px, -8px) rotate(15deg)}18%{transform:translate(-5px, 10px) rotate(1deg)}20%{transform:translate(-1px, 3px) rotate(15deg)}22%{transform:translate(-8px, 5px) rotate(-6deg)}24%{transform:translate(-1px, -9px) rotate(8deg)}26%{transform:translate(9px, 11px) rotate(-13deg)}28%{transform:translate(-7px, 4px) rotate(9deg)}30%{transform:translate(8px, 14px) rotate(9deg)}32%{transform:translate(-4px, 11px) rotate(-11deg)}34%{transform:translate(14px, 11px) rotate(-8deg)}36%{transform:translate(-13px, -8px) rotate(13deg)}38%{transform:translate(-12px, 1px) rotate(-13deg)}0%,40%,100%{transform:translate(0, 0) rotate(0)}}.shake-chunk:hover,.shake-trigger:hover .shake-chunk,.shake-chunk.shake-freeze,.shake-chunk.shake-constant{animation:shake-chunk 4s ease-in-out infinite}
+*/
