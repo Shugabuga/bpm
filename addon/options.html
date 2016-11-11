@@ -97,6 +97,18 @@
 
   <form class="form-inline">
   <fieldset>
+    <legend>Update BPM</legend>
+    <p class="desc">BPM automatically looks for an update once a week. If you want
+    to update sooner, you can manually update BPM here.</p><br>
+    <i id="bpmLastUpdated">Last Updated: Broken. If you see this, contact /u/HeyItsShuga and /u/Typhos ASAP.</i>
+    <div id="updateBPM"></div>
+    <br>
+    <button type="button" onclick="bpmUpdate()" id="updateBPMbtn" class="btn">Update</button>
+  </fieldset>
+  </form>
+
+  <form class="form-inline">
+  <fieldset>
     <legend>Enabled Subreddits</legend>
     <p class="desc">BPM includes emotes from many different subreddits.
     You may enable or disable them individually to your preference.</p>
