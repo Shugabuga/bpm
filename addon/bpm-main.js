@@ -1,4 +1,10 @@
 /*
+ * /u/HeyItsShuga - Attach CSS to pref-setup.js's will.
+ */
+
+// *dust *
+
+/*
  * Attaches all of our CSS.
  */
 function init_css(store) {

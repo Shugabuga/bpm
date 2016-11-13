@@ -409,6 +409,10 @@ document.head.appendChild(script);
 ////// same as emoteClasses. fix that first though. /////
 }
 
+// Communication with Reddit DOM
+
+// *dust*
+
 // Firefox
 if(typeof(exports) !== "undefined") {
     exports.manage_prefs = manage_prefs;
