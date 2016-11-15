@@ -355,14 +355,14 @@ css_manager.prototype = {
 /// See if it has been a week since the last update. NOTE: Can't be run from options.html
 var oldUpdate = localStorage.update
 var newUpdate = Date.now()
-console.log("[BPM] Current Time: " + newUpdate)
-console.log("[BPM] Last Update: " + oldUpdate)
+console.log("BPM: Current Time: " + newUpdate)
+console.log("BPM: Last Update: " + oldUpdate)
 var updateElapsed = newUpdate - oldUpdate
 if (updateElapsed >= 604800000) {
   bpmUpdate()
-  console.log('[BPM] Updating...')
+  console.log('BPM: Updating...')
 } else if (typeof oldUpdate === "undefined") {
-  console.log('[BPM] First run detected. If this is not true, something is broken.')
+  console.log('BPM: First run detected. If this is not true, something is broken.')
   bpmUpdate()
 }
 
@@ -395,12 +395,18 @@ function bpmUpdate() {
 
 function bpmInject() {
 // bpm-resources.js - injection
+console.log('BPM: Injecting <script> tag...')
 window.URL = window.URL || window.webkitURL;
 var blob = new Blob([localStorage.bpmResources], {type: 'text/javascript'});
 var script = document.createElement('script');
 script.rel = 'js';
 script.src = window.URL.createObjectURL(blob);
 document.head.appendChild(script);
+console.log('BPM: Injected <script> tag!')
+
+// var script = document.createElement('script');
+// script.src = 'data:text/javascript,' + encodeURI(localStorage.bpmResources);
+// document.head.appendChild(script);
 
 // emote-classes.css - inject
 ////// same as emoteClasses. fix that first though. /////
@@ -409,11 +415,22 @@ document.head.appendChild(script);
 ////// same as emoteClasses. fix that first though. /////
 }
 
+bpmInject()
+
 // Communication with Reddit DOM
 
 // *dust*
 
+
 // Firefox
 if(typeof(exports) !== "undefined") {
     exports.manage_prefs = manage_prefs;
+}
+
+window.onload = function WindowLoad(event) {
+// Load cr-background programatically after load or else bpm-resources won't load
+var script = document.createElement('script');
+script.rel = 'js';
+script.src = "background.js"
+document.head.appendChild(script);
 }
