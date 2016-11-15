@@ -394,7 +394,7 @@ function bpmUpdate() {
 }
 
 function bpmInject() {
-// bpm-resources.js - injection
+// bpm-resources.js - injection to background script
 console.log('BPM: Injecting <script> tag...')
 window.URL = window.URL || window.webkitURL;
 var blob = new Blob([localStorage.bpmResources], {type: 'text/javascript'});
@@ -404,22 +404,22 @@ script.src = window.URL.createObjectURL(blob);
 document.head.appendChild(script);
 console.log('BPM: Injected <script> tag!')
 
-// var script = document.createElement('script');
-// script.src = 'data:text/javascript,' + encodeURI(localStorage.bpmResources);
-// document.head.appendChild(script);
-
-// emote-classes.css - inject
-////// same as emoteClasses. fix that first though. /////
-
-// gif-animotes.js - inject
-////// same as emoteClasses. fix that first though. /////
+// emote-classes.css - generate blob
+var blobc1 = new Blob([localStorage.emoteClasses], {type: 'text/javascript'});
+console.log('BPM: emoteClasses: ' + window.URL.createObjectURL(blobc1))
+// gif-animotes.css - generate blob
+var blobc2 = new Blob([localStorage.gifAnimotes], {type: 'text/javascript'});
+console.log('BPM: gifAnimotes: ' + window.URL.createObjectURL(blobc2))
 }
 
 bpmInject()
 
-// Communication with Reddit DOM
-
-// *dust*
+// Link all CSS files to DOM
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+      sendResponse({emoteClasses: window.URL.createObjectURL(blobc1)});
+      sendResponse({gifAnimotes: window.URL.createObjectURL(blobc2)});
+  });
 
 
 // Firefox

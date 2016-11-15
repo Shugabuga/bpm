@@ -1,10 +1,4 @@
 /*
- * /u/HeyItsShuga - Attach CSS to pref-setup.js's will.
- */
-
-// *dust *
-
-/*
  * Attaches all of our CSS.
  */
 function init_css(store) {
@@ -13,7 +7,19 @@ function init_css(store) {
     // does not- there's no clear way to manipulate the partial DOM, so we delay.
     with_css_parent(function() {
         log_info("Setting up css");
-        link_css("/bpmotes.css");
+        console.log('BPM: Loading CSS...')
+
+        /*
+         * /u/HeyItsShuga - Attach CSS delivered from pref-setup.js
+         */
+         chrome.runtime.sendMessage({bpmLinkee: "I work!"}, function(response) {
+           link_css(response.emoteClasses);
+           console.log('BPM: emoteClasses: ' + response.emoteClasses)
+          //  var bpmAnimotes = response.gifAnimotes
+           console.log('BPM: gifAnimotes: ' + response.gifAnimotes)
+         });
+
+        // link_css("/bpmotes.css");
         link_css("/emote-classes.css");
 
         if(store.prefs.enableExtraCSS) {
