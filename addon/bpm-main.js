@@ -7,20 +7,19 @@ function init_css(store) {
     // does not- there's no clear way to manipulate the partial DOM, so we delay.
     with_css_parent(function() {
         log_info("Setting up css");
-        console.log('BPM: Loading CSS...')
 
         /*
          * /u/HeyItsShuga - Attach CSS delivered from pref-setup.js
          */
-         chrome.runtime.sendMessage({bpmLinkee: "I work!"}, function(response) {
+
+         chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
+           console.log(response.farewell);
+
            link_css(response.emoteClasses);
-           console.log('BPM: emoteClasses: ' + response.emoteClasses)
-          //  var bpmAnimotes = response.gifAnimotes
-           console.log('BPM: gifAnimotes: ' + response.gifAnimotes)
          });
 
-        // link_css("/bpmotes.css");
-        link_css("/emote-classes.css");
+        link_css("/bpmotes.css");
+        // link_css("/emote-classes.css");
 
         if(store.prefs.enableExtraCSS) {
             // Inspect style properties to determine what extracss variant to

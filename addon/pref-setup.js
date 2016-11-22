@@ -393,7 +393,6 @@ function bpmUpdate() {
   localStorage.setItem("update", newUpdate);
 }
 
-function bpmInject() {
 // bpm-resources.js - injection to background script
 console.log('BPM: Injecting <script> tag...')
 window.URL = window.URL || window.webkitURL;
@@ -405,22 +404,29 @@ document.head.appendChild(script);
 console.log('BPM: Injected <script> tag!')
 
 // emote-classes.css - generate blob
-var blobc1 = new Blob([localStorage.emoteClasses], {type: 'text/javascript'});
-console.log('BPM: emoteClasses: ' + window.URL.createObjectURL(blobc1))
+var blobc1 = new Blob([localStorage.emoteClasses], {type: 'text/stylesheet'});
+var css1 = window.URL.createObjectURL(blobc1)
+console.log('BPM: emoteClasses: ' + css1)
 // gif-animotes.css - generate blob
-var blobc2 = new Blob([localStorage.gifAnimotes], {type: 'text/javascript'});
-console.log('BPM: gifAnimotes: ' + window.URL.createObjectURL(blobc2))
-}
-
-bpmInject()
+var blobc2 = new Blob([localStorage.gifAnimotes], {type: 'text/stylesheet'});
+var css2 = window.URL.createObjectURL(blobc2)
+console.log('BPM: gifAnimotes: ' + css2)
 
 // Link all CSS files to DOM
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-      sendResponse({emoteClasses: window.URL.createObjectURL(blobc1)});
-      sendResponse({gifAnimotes: window.URL.createObjectURL(blobc2)});
+    console.log(sender.tab ?
+                "from a content script:" + sender.tab.url :
+                "from the extension");
+    if (request.greeting == "hello")
+      sendResponse({emoteClasses: css1, gifAnimotes: css2, farewell: "[BPM] Background script communication online!"});
   });
 
+// chrome.runtime.onMessage.addListener(
+//   function(request, sender, sendResponse) {
+//       sendResponse({emoteClasses: css1});
+//       sendResponse({gifAnimotes: css2});
+//   });
 
 // Firefox
 if(typeof(exports) !== "undefined") {
