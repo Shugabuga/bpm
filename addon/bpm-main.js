@@ -8,16 +8,6 @@ function init_css(store) {
     with_css_parent(function() {
         log_info("Setting up css");
 
-        /*
-         * /u/HeyItsShuga - Attach CSS delivered from pref-setup.js
-         */
-
-         chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
-           console.log(response.farewell);
-
-           link_css(response.emoteClasses);
-         });
-
         link_css("/bpmotes.css");
         // link_css("/emote-classes.css");
 
@@ -60,19 +50,19 @@ function init_css(store) {
 
         add_css(store.custom_css);
 
-        // This needs to come after subreddit CSS to override their !important,
-        // so just use document.head directly.
-        if(platform === "chrome-ext") {
-            make_css_link("/gif-animotes.css", function(tag) {
-                if(document.head) {
-                    document.head.appendChild(tag);
-                } else {
-                    with_dom(function() { // Chrome, at least
-                        document.head.appendChild(tag);
-                    });
-                }
-            });
-        }
+        // // This needs to come after subreddit CSS to override their !important,
+        // // so just use document.head directly.
+        // if(platform === "chrome-ext") {
+        //     make_css_link("/gif-animotes.css", function(tag) {
+        //         if(document.head) {
+        //             document.head.appendChild(tag);
+        //         } else {
+        //             with_dom(function() { // Chrome, at least
+        //                 document.head.appendChild(tag);
+        //             });
+        //         }
+        //     });
+        // }
     });
 
     with_dom(function() {

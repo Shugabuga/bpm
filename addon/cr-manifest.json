@@ -27,10 +27,13 @@
         "http://*.redditstatic.com/",
         "https://*.redditstatic.com/",
         "http://*.redditmedia.com/",
-        "https://*.redditmedia.com/"
+        "https://*.redditmedia.com/",
+        "tabs",
+        "activeTab"
     ],
     "version": "/*{{version}}*/",
     "web_accessible_resources": [
+        "*",
         "bpmotes.css",
         "emote-classes.css",
         "combiners-nsfw.css",

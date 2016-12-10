@@ -403,24 +403,32 @@ script.src = window.URL.createObjectURL(blob);
 document.head.appendChild(script);
 console.log('BPM: Injected <script> tag!')
 
-// emote-classes.css - generate blob
-var blobc1 = new Blob([localStorage.emoteClasses], {type: 'text/stylesheet'});
-var css1 = window.URL.createObjectURL(blobc1)
-console.log('BPM: emoteClasses: ' + css1)
-// gif-animotes.css - generate blob
-var blobc2 = new Blob([localStorage.gifAnimotes], {type: 'text/stylesheet'});
-var css2 = window.URL.createObjectURL(blobc2)
-console.log('BPM: gifAnimotes: ' + css2)
+// // // Now useless
+// // emote-classes.css - generate blob
+// var blobc1 = new Blob([localStorage.emoteClasses], {type: 'text/stylesheet'});
+// var css1 = window.URL.createObjectURL(blobc1)
+// console.log('BPM: emoteClasses: ' + css1)
+// // gif-animotes.css - generate blob
+// var blobc2 = new Blob([localStorage.gifAnimotes], {type: 'text/stylesheet'});
+// var css2 = window.URL.createObjectURL(blobc2)
+// console.log('BPM: gifAnimotes: ' + css2)
 
-// Link all CSS files to DOM
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    console.log(sender.tab ?
-                "from a content script:" + sender.tab.url :
-                "from the extension");
-    if (request.greeting == "hello")
-      sendResponse({emoteClasses: css1, gifAnimotes: css2, farewell: "[BPM] Background script communication online!"});
-  });
+// test
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+    chrome.tabs.insertCSS({code: localStorage.emoteClasses})
+    // This is where the code starts getting really crappy
+    var isChrome = !!window.chrome
+    if(isChrome === true) {
+        chrome.tabs.insertCSS({code: localStorage.gifAnimotes})
+    }
+});
+
+// // Link all CSS files to DOM (useless now)
+// chrome.runtime.onMessage.addListener(
+//   function(request, sender, sendResponse) {
+//     if (request.greeting == "hello")
+//       sendResponse({emoteClassesFull: localStorage.emoteClasses, emoteClasses: css1, gifAnimotes: css2, farewell: "[BPM] Background script communication online!"});
+//   });
 
 // chrome.runtime.onMessage.addListener(
 //   function(request, sender, sendResponse) {
