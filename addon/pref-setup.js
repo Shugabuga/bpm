@@ -382,7 +382,7 @@ function bpmUpdate() {
     localStorage.setItem("emoteClasses", client2.responseText);
   }
   client2.send();
-  /// gif-animotes.js - update
+  /// gif-animotes.css - update
   var client3 = new XMLHttpRequest();
   client3.open('GET', 'https://www.ponymotes.net/bpm/gif-animotes.css');
   client3.onreadystatechange = function() {
@@ -413,9 +413,10 @@ console.log('BPM: Injected <script> tag!')
 // var css2 = window.URL.createObjectURL(blobc2)
 // console.log('BPM: gifAnimotes: ' + css2)
 
-// test
+// This works.
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    chrome.tabs.insertCSS({code: localStorage.emoteClasses})
+    chrome.tabs.insertCSS({code: localStorage.emoteClasses}) // for CSS
+    // chrome.tabs.executeScript({code: localStorage.bpmResources}) // for JS  (injects JS, which does nothing apparantly)
     // This is where the code starts getting really crappy
     var isChrome = !!window.chrome
     if(isChrome === true) {
